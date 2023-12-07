@@ -307,7 +307,7 @@ html {
 .box-sanpham{
     float: left;
     padding: 10px;
-    width: calc(100% /4);
+    width: calc(100% /5);
     display: inline-block;
     box-shadow: 0 0 3px rgba(119, 82, 82, 0.512);
     border-radius: 4px;   
@@ -364,10 +364,9 @@ html {
     cursor: default;
     
 }
+
 .proloop-action {
     position: relative;
-}
-.proloop-action {
     text-align: center;
 }
 .ti-bag {
@@ -402,7 +401,7 @@ html {
 
 .btn-1:hover,
 .btn-1:active {
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .btn-1:after,
@@ -506,7 +505,6 @@ html {
     padding-right: 15px;
     padding-left: 15px;
 }
-
 .content-footer{
     padding: 10px 0px 20px;
 }
@@ -532,9 +530,6 @@ html {
     font-size: inherit;
     text-rendering: auto;
     color: #333333;
-
-
-
 }
 .address-footer{
 }
