@@ -452,19 +452,25 @@ html {
     padding: 15px 0;
 }
 .col-5{
-    max-width: 16.666667%;
+    max-width: 20%;
+    flex: 0 0 20%;
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    color: #333333;
 
 
    
 }
-.col-l5{
-    flex: 0 0 25%;
+.footer-nav li{
+    color: #333333;
+}
+
+.col-5.col-5-2{
     max-width: 25%;
 }
+
 .footer .footer-copyright{
     text-align: center;
     border-top: 1px solid rgba(51, 51, 51, 0.08);
@@ -525,6 +531,7 @@ html {
     display: inline-block;
     font-size: inherit;
     text-rendering: auto;
+    color: #333333;
 
 
 
@@ -535,8 +542,25 @@ html {
 li{
     margin: 0 0 8px;
 }
-
+.footer-nav li{
+    text-decoration: none;
+}
 
 .footer .footer-cocial li{
+
     display: inline-block;
+    list-style-type: none;
+}
+.footer-copyright .container p a {
+    color: #333333;
+    text-decoration: none;
+
+}
+.address-footer li{
+    list-style-type: none;
+}
+
+
+.text-font{
+    color: #333333;
 }
