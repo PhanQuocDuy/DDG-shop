@@ -333,15 +333,23 @@ html {
     padding: 15px 0;
 }
 .col-5{
-    max-width: 16.666667%;
-    flex: 0 0 16.666667%;
+    max-width: 20%;
+    flex: 0 0 20%;
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    color: #333333;
 
 
    
+}
+.footer-nav li{
+    color: #333333;
+}
+
+.col-5.col-5-2{
+    max-width: 25%;
 }
 
 .footer .footer-copyright{
@@ -404,6 +412,7 @@ html {
     display: inline-block;
     font-size: inherit;
     text-rendering: auto;
+    color: #333333;
 
 
 
@@ -414,13 +423,25 @@ html {
 li{
     margin: 0 0 8px;
 }
-
+.footer-nav li{
+    text-decoration: none;
+}
 
 .footer .footer-cocial li{
+
     display: inline-block;
+    list-style-type: none;
 }
-.col-footer-l1-2 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+.footer-copyright .container p a {
+    color: #333333;
+    text-decoration: none;
+
+}
+.address-footer li{
+    list-style-type: none;
+}
+
+
+.text-font{
+    color: #333333;
 }
