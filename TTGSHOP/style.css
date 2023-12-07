@@ -398,4 +398,26 @@ html {
 }
 .footer-cocial{
     padding: 10px 0;
+    font-size: 24px;
+    
+
+}
+.fa{
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+
+
+
+}
+.address-footer{
+}
+
+li{
+    margin: 0 0 8px;
+}
+
+
+.footer .footer-cocial li{
+    display: inline-block;
 }
