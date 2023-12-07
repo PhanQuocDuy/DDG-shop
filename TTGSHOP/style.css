@@ -292,8 +292,13 @@ html {
 #content-body {
     padding-top: 100px;
 }
+.Top-titel {
+    padding-bottom: 20px;
+}
 .titel {
     font-size: 24px;
+    color: #333333;
+    text-decoration: none;
 }
 .content-body-box {
     position: relative;
@@ -304,17 +309,131 @@ html {
     padding: 10px;
     width: calc(100% /4);
     display: inline-block;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 0 3px rgba(119, 82, 82, 0.512);
     border-radius: 4px;   
 }
 .img-sanpham {
     width: 100%;
-}
-.box-GH {
-}
-.ten-sanpham {
     padding-top: 30px;
 }
+.ten-sanpham {
+    padding-top: 15px;
+    width: 100% ; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.TT-price {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    display: flex!important;
+}
+.gia-sanpham {
+    display: block;
+    margin-right: 4px;
+    color: #d0021c;
+}
+.TT-SP {
+    flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    padding-right: 5px;
+}
+.sale-SP {
+    display: block;
+    color: #878c8f;
+    text-decoration: line-through;
+    font-weight: 300;
+    font-size: 13px;
+}
+.G-sale {
+    background: #ff0000;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding: 5px 5px;
+    min-width: 38px;
+    text-align: center;
+    align-self: center;
+    -ms-align-self: center;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: default;
+    
+}
+.proloop-action {
+    position: relative;
+}
+.proloop-action {
+    text-align: center;
+}
+.ti-bag {
+    display: inline-block;
+    width: 14px;
+}
+.btn-bag {
+    height: 100%;
+    background: #fff;
+    color: #252a2b;
+    border: 0;
+    border-radius: 16px;
+    position: relative;
+    padding: 0 15px 0 35px;
+    height: 32px;
+    line-height: 30px;
+    outline: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/*test button*/
+.btn-1 {
+    letter-spacing: 0;
+}
+
+.btn-1.color-green:hover,
+.btn-1.color-green:active {
+  color: green;
+}
+
+.btn-1:hover,
+.btn-1:active {
+  letter-spacing: 5px;
+}
+
+.btn-1:after,
+.btn-1:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+  opacity: 0;
+}
+
+.btn-1.color-green:after,
+.btn-1.color-green:before {
+  border: 1px solid green;
+}
+
+
+.btn-1:hover:after,
+.btn-1:hover:before {
+  backface-visibility: hidden;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  opacity: 1;
+}
+
+/*Footer*/
 .footer {
    
     display: block;
