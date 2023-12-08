@@ -1,0 +1,59 @@
+
+main{
+    display: block;
+}
+.wrapperMain_content {
+    min-height: 80vh;
+    padding-bottom: 30px;
+}
+.layout-account {
+    padding: 60px 0;
+    margin-bottom: 50px;
+    border-top: 1px solid var(--shop-color-border);
+}
+.customers_accountForm {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 25px 30px 30px;
+    background: #ffffff;
+}
+.layout-account .tab-form-account {
+    margin-bottom: 45px;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.layout-account .tab-form-account h4 {
+    padding: 0px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.customers_accountForm .accounttype h2 {
+    font-size: 20px;
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
