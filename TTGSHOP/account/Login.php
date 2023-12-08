@@ -11,20 +11,7 @@
 
     <title>Document</title>
 </head>
-<body>  
-        <?php 
-        required "HeadAndFoot/header.php"
-        ?>
-        
-
-
-
-
-
-
-
-
-
+<body> 
 
 
 
@@ -109,10 +96,6 @@
 
 
 
-
-        <?php 
-        required "HeadAndFoot/footer.php";
-        ?>
 
 
 
