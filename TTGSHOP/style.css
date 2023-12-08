@@ -526,6 +526,7 @@ html {
 }
 
 
+<<<<<<< HEAD
 /* */
 #banner {
     display: flex;
@@ -557,3 +558,43 @@ html {
   #section4 {
     background-image: url('section4.jpg');
   }
+=======
+/* section*/
+.section-banner-body{
+    padding-bottom: 60px;
+    display: block;
+}
+.container-banner-body {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row-banner {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-banner {
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.banner-inner {
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.img-banner-section {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+>>>>>>> 058b8a66b20b4330877bbe3cc7a3bfb5397902a8
