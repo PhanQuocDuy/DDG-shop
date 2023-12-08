@@ -524,10 +524,47 @@ html {
 .content-DMNB .list-DMNB .col17-cus:hover  {
 <<<<<<< Updated upstream
     box-shadow: 0 -1px 2px 0 rgba(60, 64, 67, 0.1), 0 0px 6px 2px rgba(60, 64, 67, 0.15);
+<<<<<<< HEAD
 }
 =======
     background-color: #878c8f;
 }
+=======
+<<<<<<< HEAD
+}
+
+/* */
+#banner {
+    display: flex;
+    width: 100%;
+  }
+  
+  .section {
+    width: 33.33%;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #section1 {
+    background-image: url('section1.jpg');
+  }
+  
+  #section2 {
+    background-image: url('section2.jpg');
+  }
+  
+  #section3 {
+    background-image: url('section3.jpg');
+  }
+  #section4 {
+    background-image: url('section4.jpg');
+  }
+>>>>>>> 12c709de12eb10f69d99a822c046ac6e7141fb28
 /*Footer*/
 .footer {
    
@@ -659,12 +696,15 @@ li{
     color: #333333;
     text-decoration: none;
 }
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> 12c709de12eb10f69d99a822c046ac6e7141fb28
 main{
     display: block;
 }
@@ -723,4 +763,10 @@ form {
     display: block;
     margin-top: 0em;
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+=======
+}
+>>>>>>> 1f5dfacbbec3cd9ac149756a5157df6c13c140dd
+>>>>>>> 12c709de12eb10f69d99a822c046ac6e7141fb28
