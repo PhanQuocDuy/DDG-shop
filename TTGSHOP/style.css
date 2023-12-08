@@ -522,5 +522,205 @@ html {
     color: #333333  ;
 }
 .content-DMNB .list-DMNB .col17-cus:hover  {
+<<<<<<< Updated upstream
     box-shadow: 0 -1px 2px 0 rgba(60, 64, 67, 0.1), 0 0px 6px 2px rgba(60, 64, 67, 0.15);
 }
+=======
+    background-color: #878c8f;
+}
+/*Footer*/
+.footer {
+   
+    display: block;
+    padding: 30px 0 0;
+    line-height: 1.6;
+}
+.widget-footer{
+
+}
+.mainFooter .footer-center .widget-footer {
+    border-bottom: 0;
+}
+.footer-copyright{
+    text-align: center;
+    border-top: 1px solid rgba(51, 51, 51, 0.08);
+    padding: 15px 0;
+}
+.col-5{
+    max-width: 20%;
+    flex: 0 0 20%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #333333;
+
+
+   
+}
+.footer-nav li{
+    color: #333333;
+}
+
+.col-5.col-5-2{
+    max-width: 25%;
+}
+
+.footer .footer-copyright{
+    text-align: center;
+    border-top: 1px solid rgba(51, 51, 51, 0.08);
+    padding: 15px 0;
+   
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title-footer{
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    margin: 0px;
+    padding: 15px 0;
+}
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-5-1{
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.content-footer{
+    padding: 10px 0px 20px;
+}
+.row2{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.footer-ex{
+    padding: 30px 0 0;
+}
+.footer-cocial{
+    padding: 10px 0;
+    font-size: 24px;
+    
+
+}
+.fa{
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    color: #333333;
+}
+.address-footer{
+}
+
+li{
+    margin: 0 0 8px;
+}
+.footer-nav li{
+    text-decoration: none;
+}
+
+.footer .footer-cocial li{
+
+    display: inline-block;
+    list-style-type: none;
+}
+.footer-copyright .container p a {
+    color: #333333;
+    text-decoration: none;
+
+}
+.address-footer li{
+    list-style-type: none;
+}
+
+
+.text-font{
+    color: #333333;
+}
+.footer-nav li a{
+    color: #333333;
+    text-decoration: none;
+}
+
+
+
+
+
+
+main{
+    display: block;
+}
+.wrapperMain_content {
+    min-height: 80vh;
+    padding-bottom: 30px;
+}
+.layout-account {
+    padding: 60px 0;
+    margin-bottom: 50px;
+    border-top: 1px solid var(--shop-color-border);
+}
+.customers_accountForm {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 25px 30px 30px;
+    background: #ffffff;
+}
+.layout-account .tab-form-account {
+    margin-bottom: 45px;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.layout-account .tab-form-account h4 {
+    padding: 0px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.customers_accountForm .accounttype h2 {
+    font-size: 20px;
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+>>>>>>> Stashed changes
