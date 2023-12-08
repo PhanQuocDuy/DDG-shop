@@ -308,6 +308,7 @@ html {
     float: left;
     padding: 10px;
     width: calc(100% /5);
+    background-color: aliceblue;
     display: inline-block;
     box-shadow: 0 0 3px rgba(119, 82, 82, 0.512);
     border-radius: 4px;   
@@ -394,9 +395,9 @@ html {
     letter-spacing: 0;
 }
 
-.btn-1.color-green:hover,
-.btn-1.color-green:active {
-  color: green;
+.btn-1.color-blu:hover,
+.btn-1.color-blu:active {
+  color: aqua;
 }
 
 .btn-1:hover,
@@ -418,9 +419,9 @@ html {
   opacity: 0;
 }
 
-.btn-1.color-green:after,
-.btn-1.color-green:before {
-  border: 1px solid green;
+.btn-1.color-blu:after,
+.btn-1.color-blu:before {
+  border: 1px solid aqua;
 }
 
 
@@ -431,7 +432,103 @@ html {
   width: 70%;
   opacity: 1;
 }
+/* Danh muc noi bat */
+.home-DMNB {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+.container-DMNB {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrapbox {
+    background-size: cover;
+    border-radius: 5px;
+    margin: 0;
+    align-items: center;
+    -ms-align-items: center;
+    color: var(--home-categorize-color);
+    background: #ffffff;
+    position: relative;    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.section-heading-DMNB {
+    width: 100%;
+    padding: 20px 15px;
+    margin: 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+.titel-DMNB {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
 
+}
+.text-DMNB {
+    text-decoration: none;
+    list-style: none;
+    color: #333333;
+}
+.content-DMNB {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.list-DMNB {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.col17-cus {
+    flex: 0 0 calc(100%/7);
+    max-width: calc(100%/7);
+}
+.item-DMNB {
+    position: relative;
+    padding: 15px 15px;
+    height: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+.item-img-DMNB {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto 8px;
+}
+.box-lazy-img {
+    position: relative;
+    height: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.DMNB-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+.item-titel-DMNB {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    color: #333333  ;
+}
+.content-DMNB .list-DMNB .col17-cus:hover  {
+    background-color: #878c8f;
+}
 /*Footer*/
 .footer {
    
