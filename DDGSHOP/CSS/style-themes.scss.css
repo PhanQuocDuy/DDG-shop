@@ -32,13 +32,6 @@
   --footer-color-text-2: #333333;
   --footer-color-hover: #0081d3; }
 
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("//theme.hstatic.net/1000288298/1001020793/14/fontawesome-webfont.eot?v=280");
-  src: url("//theme.hstatic.net/1000288298/1001020793/14/fontawesome-webfont.eot?v=280") format("embedded-opentype"), url("//theme.hstatic.net/1000288298/1001020793/14/fontawesome-webfont.woff2?v=280") format("woff2"), url("//theme.hstatic.net/1000288298/1001020793/14/fontawesome-webfont.woff?v=280") format("woff"), url("//theme.hstatic.net/1000288298/1001020793/14/fontawesome-webfont.ttf?v=280") format("truetype"), url("//theme.hstatic.net/1000288298/1001020793/14/fontawesome-webfont.svg?v=280") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
 
 * {
   margin: 0;
@@ -3164,6 +3157,8 @@ img.lazyload:not([src]) {
 
 @media (min-width: 992px) {
   .mainHeader.mainHeader_temp03 .mainHeader-middle {
+    position: fixed;
+    width: 100%;
     padding: 15px 0; }
   .mainHeader.mainHeader_temp03 .header-wrap-action .header-action .header-action-item .header-action_text .header-action__link .box-icon .pulse {
     background: #263342; }
