@@ -1,0 +1,214 @@
+/*===== ACCOUNT ============================================*/
+.layout-account	{padding: 60px 0;margin-bottom:50px;border-top: 1px solid var(--shop-color-border);}
+.layout-account	.header-page h1 {position: relative;text-align: center;font-size:25px;font-weight: 700;margin: 0px 0;line-height: initial;}
+.layout-account	.header-page h1:after {content: "";background: #000;display: block;width: 60px;height: 4px;margin:20px auto;}
+.layout-account .tab-form-account {margin-bottom: 45px;}
+.layout-account .tab-form-account h4 {
+	padding: 0px 30px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+}
+.layout-account .tab-form-account h4 + h4 {border-left: 2px solid gray;}
+.layout-account .tab-form-account h4 a {color: #cacaca;}
+.layout-account .tab-form-account h4.active a {color: #000;}
+.layout-account .tab-form-account h4:hover a {color: #000;}
+.customers_accountForm{
+	max-width: 620px;
+	margin: 0 auto;
+	padding: 25px 30px 30px;
+	background: #ffffff;
+}
+.customers_accountForm .header-page{margin-bottom: 10px;}
+.customers_accountForm .accounttype h2 {font-size:20px;margin: 0 0 20px; font-weight: 600;}
+.customers_accountForm .large_form {margin-bottom:25px;}
+.customers_accountForm .large_form.large_form-mrb {margin-bottom:5px;}
+.customers_accountForm .icon-field {display:none;}
+.customers_accountForm input[type=email],
+.customers_accountForm input[type=password],
+.customers_accountForm input[type=text]{
+	width: 100%;
+	height: 55px;	padding:5px 20px;
+	color: #5c5c5c;	font-weight: 500;
+	border: 1px solid transparent;background: #ededed;    outline: none;
+	-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;appearance: none;
+	font-style: italic;
+}
+.customers_accountForm input[type=email]:focus,
+.customers_accountForm input[type=password]:focus,
+.customers_accountForm input[type=text]:focus{background: #fff;border-color: #ededed;}
+.customers_accountForm .req_pass{ padding-left: 30px; margin-right: auto;}
+.customers_accountForm .req_pass p{margin: 0;}
+.customers_accountForm .custommer_account_action {
+	display: -ms-flex;display: flex;
+	-ms-align-items: center;align-items: center;
+	-ms-flex-wrap: wrap;flex-wrap: wrap;
+}
+.customers_accountForm .custommer_account_action .action_bottom,
+.customers_accountForm .custommer_account_action .req_pass a {color: #009dde;}
+.customers_accountForm .action_bottom{padding:0;border-radius: 4px;}
+.customers_accountForm .action_bottom .btn {
+	display: inline-block;border-radius: 0;
+	padding: 0 35px;height: 45px;line-height: 45px;
+	text-transform: uppercase;font-weight: 600;
+	background: transparent; cursor: pointer;
+	border: 0;color: #fff;font-size: 14px;outline: none;
+	-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;appearance: none;
+}
+
+.customers_accountForm .errors{	margin-bottom: 10px;}
+.customers_accountForm .errors	a{text-decoration: underline;}
+.customers_accountForm .come-back{margin:30px 0; display: block;font-weight: 500;}
+.customers_accountForm .come-back i{margin-right:20px}
+.customers_accountForm .create-password {margin: 10px 0;}
+@-moz-keyframes ripple ripple { 5%, 100% {opacity: 0;} 5% {opacity: 1;} }
+@-webkit-keyframes ripple { 5%, 100% {opacity: 0;} 5% {opacity: 1;} }
+@keyframes ripple ripple { 5%, 100% {opacity: 0;} 5% {opacity: 1;} }
+#field-gender input[type="radio"] {display: none;}
+#field-gender input[type="radio"] + label {position: relative;cursor: pointer;padding-left: 28px;margin: 0 20px 0 0;}
+#field-gender input[type="radio"] + label:before, input[type="radio"] + label:after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#field-gender input[type="radio"] + label:before {
+	top: 0;	left: 0;width: 18px;height: 18px;	background: #323232;
+	-moz-box-shadow: inset 0 0 0 18px #efefef;-webkit-box-shadow: inset 0 0 0 18px #efefef;box-shadow: inset 0 0 0 18px #efefef;
+}
+#field-gender input[type="radio"] + label:after {
+	top: 49%;
+	left: 9px;width: 54px;height: 54px;	opacity: 0;
+	background: rgba(255, 255, 255, 0.3);
+	-moz-transform: translate(-50%, -50%) scale(0);
+	-ms-transform: translate(-50%, -50%) scale(0);
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	transform: translate(-50%, -50%) scale(0);
+}
+#field-gender input[type="radio"]:checked + label:before {-moz-box-shadow: inset 0 0 0 4px #efefef;-webkit-box-shadow: inset 0 0 0 4px #efefef;box-shadow: inset 0 0 0 4px #efefef;}
+#field-gender input[type="radio"]:checked + label:after {
+	-moz-transform: translate(-50%, -50%) scale(1);
+	-ms-transform: translate(-50%, -50%) scale(1);
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
+	-moz-animation: ripple 1s none;-webkit-animation: ripple 1s none;	animation: ripple 1s none;
+}
+/* address */
+.customer_address .input-group {margin: 15px 0px;position: relative;display: table;width: 100%;border-collapse: separate;}
+.customer_address .input-group .input-ico {position: absolute;left: 0;top: 0;width: 35px;height: 34px;line-height: 34px;text-align: center;	border-radius: 0;	color: #DAD9D9;	background-color: #ebebeb;}
+.customer_address .input-group .input-textbox {
+	margin-left: 35px;width: calc(100% - 35px);height: 34px;
+	padding: 5px 15px;font-size: 14px;color: #555;background-color: #fff;
+	border: 1px solid #ebebeb;-webkit-border-radius: 0;border-radius: 0;
+	-webkit-box-shadow: none;box-shadow: none;outline: none;
+}
+.customer_address .input-group input[type=checkbox] {display: inline-block;height: 16px;	vertical-align: middle;	margin-right: 5px;}
+.customer_address .action_bottom .btn {
+	height: 35px;	line-height: 35px;margin-right: 5px;
+	font-size: 14px;padding: 0 30px;border: 0;
+	background: #323232;color: #fff;
+	display: inline-block;border-radius: 0;cursor: pointer;
+	text-transform: uppercase;outline: 0;
+}
+.wrap_editAddress .address_title {
+	margin-bottom: 0;font-size: 16px;
+	padding: 14px 65px 14px 10px;
+	background-color: #d9edf7;border-color: #bce8f1;
+	position: relative;
+}
+.wrap_editAddress .address_title h3 {margin: 0;font-size: 14px;font-weight: 500;}
+.wrap_editAddress .address_title .address_actions {position: absolute;z-index: 99;top: 0;right: 0;bottom: 0;margin: auto;}
+.wrap_editAddress .address_title .address_actions .action_link {
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+	line-height: 100%;
+	width: 30px;
+	padding: 14px 0;
+	text-align: center;
+}
+.wrap_editAddress .address_table {margin-bottom: 15px;border-top: 0px solid #ddd;background: #fbfbfb;padding: 5px 15px 15px;}
+.wrap_editAddress .address_table .view_address .large_view {margin-bottom: 8px;display: -webkit-flex;display: flex;	-webkit-flex-flow: row nowrap;flex-flow: row nowrap;}
+.wrap_editAddress .address_table .view_address .large_view .lb-left {width: 35%;padding-right: 10px;}
+.wrap_editAddress .address_table .view_address .large_view .lb-right {width: 65%;}
+.wrap_editAddress .address_table .view_address .large_view b {font-weight: 700;}
+.wrap_addAddress {margin-bottom: 30px;}
+.wrap_addAddress .add_address_table {padding: 5px 15px 15px;background: #fbfbfb;}
+.wrap_addAddress .add-new-address {
+	display: inline-block;
+	padding: 10px;
+	background: #323232;
+	color: #fff !important;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	text-align: center;
+	font-weight: 600;
+}
+.wrap_addAddress .add-new-address:focus {color: #fff;}
+/* account ++ order  */
+.wrap_inforAccount p {margin-bottom: 3px;}
+.wrap_inforAccount .title-detail {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	position: relative;
+	border-bottom: 1px solid #ededed;
+	padding-bottom: 8px;
+}
+.wrap_inforAccount .name_account {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	margin: 10px 0 5px;
+}
+a#view_address {font-weight: 500; opacity: 0.8;text-decoration: underline;margin: 5px 0 15px; display: block;}
+.customer-table-wrap {background: #d9edf7;padding:8px 10px;margin:30px 0;}
+.customer-table-wrap .customer-table-bg{background: #fff; padding: 10px;  }
+.customer-table-wrap .title-detail{text-transform: uppercase;font-size: 15px;font-weight: 700;letter-spacing: 1px;position: relative;border-bottom: 1px solid #ededed;padding-bottom:8px;}
+.table-responsive-overflow {position: relative;overflow: hidden;}
+.table-responsive-overflow .table-responsive {border:0;}
+.table-responsive-overflow .table-responsive table tr td, .table-responsive-overflow .table-responsive table thead th {white-space: nowrap;}
+table.table-customers {width: 100%;background: #fff;}
+table.table-customers thead th {font-weight: 600;	font-size: 14px;}
+table.table-customers thead th, table.table-customers tr td {vertical-align: middle;border-top: none;font-size: 14px;padding:10px 8px;}
+
+table.table-customers tr.line-order td.name a {color:#252a2b;font-size: 13.5px;white-space: normal;display: block;min-width: 18rem;}
+table.table-customers tr.line-order td.name a:hover,
+table.table-customers tr.line-order td.name a:focus{color:#263b96;}
+table.table-customers tr.line-order td.order-image{width:70px;}
+table.table-customers tr.line-order td.order-image a{display:block;width:60px;border: 1px solid #f7f7f7;}
+.wrap-table-ordership {border-top: 1px solid #ededed;padding-top:10px}
+table.table-customers.table-customers-summary tr:hover {background: #fbfbfb;}
+
+table.table-customers tr.line-order td.name span.variant_acc {font-size: 13px;opacity: 0.8;}
+.grouptitle-order	.order_name {margin-bottom:10px;font-size: 16px;font-weight: 500;text-transform: uppercase;}
+.grouptitle-order	.order_date {display:block;font-weight: normal;font-size: 14px;text-transform: none; margin: 5px 0 0;}
+.grouptitle-order	.order_cancelled {margin-bottom:15px;}
+.grouptitle-order	.order_cancelled h4 {margin:0;}
+.customer-status-order .order_section_title {font-size: 15px;font-weight: 600;line-height: 20px;margin: 0 0 10px;padding: 10px 0px;position: relative;text-transform: uppercase;}
+.customer-status-order .alert-info {border-radius: 0;margin-bottom: 0;color: #31708f;padding: 12px;	background-color: #d9edf7;border: 1px solid #bce8f1;}
+.customer-status-order .alert-info .text_status {font-weight: 500;}
+.customer-status-order .box-address {margin: 0px 0px 30px;padding: 10px;background-color: #fbfbfb;}
+.customer-status-order .box-address p {margin-bottom: 5px;}
+.customer-status-order .box-address p.adressName {font-weight: 600;}
+.order_backhome{ opacity: 0.7;}
+.AccountSidebar{margin-bottom:30px;}
+.AccountSidebar	.AccountTitle{text-transform: uppercase;margin-bottom: 10px;font-size: 15px;font-weight: 700;letter-spacing: 1px;position: relative;}
+.AccountSidebar	.AccountList ul > li > a {display: block;	position: relative;	padding: 5px 0px;color:#252a2b;}
+.AccountSidebar	.AccountList ul > li > a:before {content: "\f192";font-family: "FontAwesome";	font-size: 8px;	display: inline-block;margin-right: 8px;vertical-align: 2px;}
+.AccountSidebar	.AccountList ul > li > a:hover,
+.AccountSidebar	.AccountList ul > li > a:focus{color:#263b96;}
+
+@media(max-width: 991px){
+	.layout-account {padding: 30px 0;}
+	.layout-account .tab-form-account {margin-bottom: 25px;}
+	.layout-account .tab-form-account h4 {padding: 0px 20px;font-size: 18px;}
+	.customers_accountForm {padding: 25px 15px 30px;}
+	.customers_accountForm .req_pass {padding-left: 0;margin-top: 20px;}
+}
