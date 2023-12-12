@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--CSS-->
-        <link rel="stylesheet" href="./DDGSHOP/CSS/bootstrap.min.css">
-        <link rel="stylesheet" href="./DDGSHOP/CSS/style-themes.scss.css">
-        <!--JS-->
-        <link rel="stylesheet" href="./DDGSHOP/JS/app-combo.js">
-        <link rel="stylesheet" href="./DDGSHOP/JS/bootstrap.bundle.min.js">
-        <link rel="stylesheet" href="./DDGSHOP/JS/jquery-3.5.1.min.js">
-        <link rel="stylesheet" href="./DDGSHOP/JS/scripts.js">
+    <!--CSS-->
+    <link rel="stylesheet" href="./DDGSHOP/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./DDGSHOP/CSS/style-themes.scss.css">
+    <link rel="stylesheet" href="./DDGSHOP/CSS/style-customer.css">
+    <!--JS-->
+    <link rel="stylesheet" href="./DDGSHOP/JS/app-combo.js">
+    <link rel="stylesheet" href="./DDGSHOP/JS/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="./DDGSHOP/JS/jquery-3.5.1.min.js">
+    <link rel="stylesheet" href="./DDGSHOP/JS/scripts.js">
     <title>Document</title>
 </head>
+
 <body>
 
     <div id="templateHeader">
@@ -142,7 +145,7 @@
                                                     </span>
                                                 </span>
                                                 <a href="/Login.html" class="box-text"> Đăng nhập </a>
-                                                <a href="/Register.html" class="box-text">  / Đăng ký </a>
+                                                <a href="/Register.html" class="box-text"> / Đăng ký </a>
                                             </button>
                                             <span class="box-triangle">
                                                 <svg viewBox="0 0 20 9" role="presentation">
@@ -186,10 +189,10 @@
                                                     <a href="/Cart.html" class="txtbl">Giỏ hàng</a>
                                                 </span>
                                             </button>
-                                            
+
                                         </div>
 
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -199,6 +202,89 @@
             </header>
         </div>
     </div>
-    
+    <main class="wrapperMain_content">
+        <div class="layout-account">
+            <div class="container">
+                <div class="wrapbox-content-account">
+                    <div class="userbox customers_accountForm">
+                        <div class="tab-form-account d-flex align-items-center justify-content-center">
+                            <h4>
+                                <a href="/Login.html">Đăng nhập</a>
+                            </h4>
+                            <h4 class="active">
+                                <a href="/Register.html">Đăng ký</a>
+                            </h4>
+                        </div>
+                        <form accept-charset="UTF-8" action="/account" id="create_customer" method="post">
+                            <input name="form_type" type="hidden" value="create_customer">
+                            <input name="utf8" type="hidden" value="✓">
+
+
+                            <div id="field-lastname" class="clearfix large_form">
+                                <label for="last_name" class="label icon-field"><i
+                                        class="icon-login icon-user "></i></label>
+                                <input required="" type="text" value="" name="customer[last_name]" placeholder="Họ"
+                                    id="last_name" class="text" size="30">
+                            </div>
+                            <div id="field-firstname" class="clearfix large_form">
+                                <label for="first_name" class="label icon-field"><i
+                                        class="icon-login icon-user "></i></label>
+                                <input required="" type="text" value="" name="customer[first_name]" placeholder="Tên"
+                                    id="first_name" class="text" size="30">
+                            </div>
+                            <div id="field-gender" class="clearfix large_form">
+                                <input id="radio1" type="radio" value="0" name="customer[gender]">
+                                <label for="radio1">Nữ</label>
+                                <input id="radio2" type="radio" value="1" name="customer[gender]">
+                                <label for="radio2">Nam</label>
+                            </div>
+                            <div id="field-birthday" class="clearfix large_form">
+                                <label for="birthday" class="label icon-field"><i
+                                        class="icon-login icon-envelope "></i></label>
+                                <input type="text" value="" placeholder="mm/dd/yyyy" name="customer[birthday]"
+                                    id="birthday" class="text" size="30">
+                            </div>
+                            <div id="field-email" class="clearfix large_form">
+                                <label for="email" class="label icon-field"><i
+                                        class="icon-login icon-envelope "></i></label>
+                                <input required="" type="email" value="" placeholder="Email" name="customer[email]"
+                                    id="email" class="text" size="30">
+                            </div>
+                            <div id="field-password" class="clearfix large_form large_form-mrb">
+                                <label for="password" class="label icon-field"><i
+                                        class="icon-login icon-shield "></i></label>
+                                <input required="" type="password" value="" placeholder="Mật khẩu"
+                                    name="customer[password]" id="password" class="password text" size="30">
+                            </div>
+                            <div class="clearfix large_form sitebox-recaptcha ">
+                                This site is protected by reCAPTCHA and the Google
+                                <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy
+                                    Policy</a>
+                                and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms
+                                    of Service</a> apply.
+                            </div>
+                            <div class="clearfix custommer_account_action">
+                                <div class="action_bottom button dark">
+                                    <input class="btn" type="submit" value="Đăng ký">
+                                </div>
+                                <div class="req_pass">Bạn đã có tài khoản? <a href="/Login.html">Đăng nhập ngay</a>
+                                </div>
+                            </div>
+
+                            <input id="b8a033e49305465d85f1d111f3fba48e" name="g-recaptcha-response" type="hidden"
+                                value="03AFcWeA6tV4Lk73q0FMkpKKMTa-kzYnU0UBSVhIEWKfyFw56X2yV1qPyUIptJyA7gkSyRSgVcsyF3axOgBzYwScdu2OcfyzCDZdjA4dAXm5O6bqYqach07SooWc_pzrx5n-Oe2qoGpAuGuh1aWQIw0yYWnfPRi_9cpoCQveIbdiTtdnHUMwZP8-Cc5goqCGsCeB5T45voa90rne3SkpsB-kC8cnPse6CbVMksAS9GnTwQ4JjGYNgU6T2LXriPwTkZlTnxINYTv1QwgHFf6YpMVfuL8Zwo0V8bKPcgox6kSi_Y-jSsITDrqp2OUz7vBKuHuoofx3sRgfvEz2Z7NuhtOlUQrXr4DvIuzifVJ57zSqeCgUcEMarmKC20bbgsFJlg_dUvwTnYx2Fy71rJxzBZHQCDcyDzEINa_Y2_WdM0FbLI2Mn7dJLwbOV2EtH_evhmrixY9BzDcVMe02VvRS12pISozWPDE2Q32KFd3VuYQpLS5o73uEYLtwtOZJATt1dQE8h9IIIICMGtl4HARecPv6chU98htYK4xA">
+                            <script
+                                src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
+                            <script>grecaptcha.ready(function () { grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' }).then(function (token) { document.getElementById('b8a033e49305465d85f1d111f3fba48e').value = token; }); });</script>
+                        </form>
+                        <!-- #register -->
+                        <!-- #customer-register -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
