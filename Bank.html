@@ -43,7 +43,7 @@
                                                         <span class="hamburger-menu" aria-hidden="true">
                                                             <span class="bar"></span>
                                                         </span>
-
+    
                                                     </span>
                                                     <span class="box-tmenu">MENU</span>
                                                 </a>
@@ -69,8 +69,8 @@
                                                 class="searchform-product searchform-categoris ultimate-search">
                                                 <div class="wpo-search-inner">
                                                     <input type="hidden" name="type" value="product">
-                                                    <input required="" id="inputSearchAuto-3" class="input-search"
-                                                        name="q" maxlength="40" autocomplete="off" type="text" size="20"
+                                                    <input required="" id="inputSearchAuto-3" class="input-search" name="q"
+                                                        maxlength="40" autocomplete="off" type="text" size="20"
                                                         placeholder="Tìm kiếm sản phẩm...">
                                                 </div>
                                                 <button type="submit" class="btn-search btn">
@@ -92,7 +92,7 @@
                                                 <div class="search-suggest">
                                                     <p>Gợi ý cho bạn: </p>
                                                     <ul>
-
+    
                                                     </ul>
                                                 </div>
                                             </div>
@@ -110,8 +110,7 @@
                                                         <svg class="svg-ico-search" xmlns="http://www.w3.org/2000/svg"
                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                             id="Capa_1" x="0px" y="0px" viewBox="0 0 451 451"
-                                                            style="enable-background:new 0 0 451 451;"
-                                                            xml:space="preserve">
+                                                            style="enable-background:new 0 0 451 451;" xml:space="preserve">
                                                             <g>
                                                                 <path
                                                                     d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z">
@@ -131,7 +130,7 @@
                                         </div>
                                         <div class="header-action-item header-action_account">
                                             <div class="header-action_text">
-                                                <button class="header-action__link " onclick="window.location.reload();"
+                                                <button class="header-action__link  header-action_clicked "
                                                     id="site-account-handle" aria-label="Tài khoản" title="Tài khoản"
                                                     type="button">
                                                     <span class="box-icon">
@@ -151,8 +150,11 @@
                                                             </svg>
                                                         </span>
                                                     </span>
-                                                    <a href="/Login.html" class="box-text"> Đăng nhập </a>
-                                                    <a href="/Register.html" class="box-text"> / Đăng ký </a>
+                                                    <span class="box-text">
+                                                        Đăng nhập / Đăng ký
+                                                        <span class="txtbl">Tài khoản của tôi <i class="fa fa-angle-down"
+                                                                aria-hidden="true"></i></span>
+                                                    </span>
                                                 </button>
                                                 <span class="box-triangle">
                                                     <svg viewBox="0 0 20 9" role="presentation">
@@ -162,7 +164,159 @@
                                                     </svg>
                                                 </span>
                                             </div>
-
+    
+                                            <div class="header-action_dropdown ">
+                                                <div class="header-dropdown_content">
+                                                    <div class="sitenav-content sitenav-account " id="siteNav-account">
+                                                        <button class="btnclose" aria-label="button close">
+                                                            <svg viewBox="0 0 19 19" role="presentation">
+                                                                <path
+                                                                    d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="site_account_panel_list">
+                                                            <div id="header-login-panel"
+                                                                class="site_account_panel site_account_default is-selected">
+                                                                <div class="sitenav-content__title">
+                                                                    <p class="txt-title">Đăng nhập tài khoản</p>
+                                                                    <p class="txt-subtitle">Nhập email và mật khẩu của bạn:
+                                                                    </p>
+                                                                </div>
+                                                                <div class="sitenav-content__block">
+    
+    
+                                                                    <form accept-charset="UTF-8" action="/Login.html"
+                                                                        id="customer_login" method="post">
+                                                                        <input name="form_type" type="hidden"
+                                                                            value="customer_login">
+                                                                        <input name="utf8" type="hidden" value="✓">
+    
+    
+                                                                        <div
+                                                                            class="form__input-wrapper form__input-wrapper--labelled">
+                                                                            <input type="email" id="login-customer[email]"
+                                                                                class="form__field form__field--text"
+                                                                                name="customer[email]" required="required">
+                                                                            <label for="login-customer[email]"
+                                                                                class="form__floating-label">Email</label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="form__input-wrapper form__input-wrapper--labelled">
+    
+                                                                            <input type="password"
+                                                                                id="login-customer[password]"
+                                                                                class="form__field form__field--text"
+                                                                                name="customer[password]"
+                                                                                required="required"
+                                                                                autocomplete="current-password">
+                                                                            <label for="login-customer[password]"
+                                                                                class="form__floating-label">Mật
+                                                                                khẩu</label>
+    
+                                                                            <div class="sitebox-recaptcha">
+                                                                                This site is protected by reCAPTCHA and the
+                                                                                Google
+                                                                                <a href="https://policies.google.com/privacy"
+                                                                                    target="_blank" rel="noreferrer">Privacy
+                                                                                    Policy</a>
+                                                                                and <a
+                                                                                    href="https://policies.google.com/terms"
+                                                                                    target="_blank" rel="noreferrer">Terms
+                                                                                    of Service</a> apply.
+                                                                            </div>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="form__submit button dark"
+                                                                            id="form_submit-login">Đăng nhập</button>
+    
+                                                                        <input id="7a95ae40e8b9499f93411f172743d7ca"
+                                                                            name="g-recaptcha-response"
+                                                                            type="hidden"><noscript
+                                                                            data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function()
+                                                                            {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-',
+                                                                            {action: 'submit'}).then(function(token)
+                                                                            {document.getElementById('7a95ae40e8b9499f93411f172743d7ca').value
+                                                                            = token;});});</noscript>
+                                                                    </form>
+    
+                                                                    <div class="site_account_secondary-action">
+                                                                        <p>Khách hàng mới?
+                                                                            <a class="link" href="/Register.html">Tạo tài
+                                                                                khoản</a>
+                                                                        </p>
+                                                                        <p>Quên mật khẩu?
+                                                                            <button aria-controls="header-recover-panel"
+                                                                                class="js-link link">Khôi phục mật
+                                                                                khẩu</button>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="header-recover-panel"
+                                                                class="site_account_panel site_account_sliding">
+                                                                <div class="sitenav-content__title">
+                                                                    <p class="txt-title">Khôi phục mật khẩu</p>
+                                                                    <p class="txt-subtitle">Nhập email của bạn:</p>
+                                                                </div>
+                                                                <div class="sitenav-content__block">
+    
+    
+                                                                    <form accept-charset="UTF-8" action="/account/recover"
+                                                                        method="post">
+                                                                        <input name="form_type" type="hidden"
+                                                                            value="recover_customer_password">
+                                                                        <input name="utf8" type="hidden" value="✓">
+    
+    
+                                                                        <div
+                                                                            class="form__input-wrapper form__input-wrapper--labelled">
+                                                                            <input type="email"
+                                                                                id="recover-customer[recover_email]"
+                                                                                class="form__field form__field--text"
+                                                                                name="email" required="required">
+                                                                            <label for="recover-customer[recover_email]"
+                                                                                class="form__floating-label">Email</label>
+                                                                            <div class="sitebox-recaptcha">
+                                                                                This site is protected by reCAPTCHA and the
+                                                                                Google
+                                                                                <a href="https://policies.google.com/privacy"
+                                                                                    target="_blank" rel="noreferrer">Privacy
+                                                                                    Policy</a>
+                                                                                and <a
+                                                                                    href="https://policies.google.com/terms"
+                                                                                    target="_blank" rel="noreferrer">Terms
+                                                                                    of Service</a> apply.
+                                                                            </div>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="form__submit button dark"
+                                                                            id="form_submit-recover">Khôi phục</button>
+    
+                                                                        <input id="4884ec76fb7442abae1dbc4e728fca2f"
+                                                                            name="g-recaptcha-response"
+                                                                            type="hidden"><noscript
+                                                                            data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function()
+                                                                            {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-',
+                                                                            {action: 'submit'}).then(function(token)
+                                                                            {document.getElementById('4884ec76fb7442abae1dbc4e728fca2f').value
+                                                                            = token;});});</noscript>
+                                                                    </form>
+                                                                    <div class="site_account_secondary-action">
+                                                                        <p>Bạn đã nhớ mật khẩu?
+                                                                            <button aria-controls="header-login-panel"
+                                                                                class="js-link link">Trở về đăng
+                                                                                nhập</button>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+    
                                         </div>
                                         <div class="header-action-item header-action_cart">
                                             <div class="header-action_text">
@@ -193,13 +347,127 @@
                                                         </span>
                                                     </span>
                                                     <span class="box-text">
-                                                        <a href="/Cart.html" class="txtbl">Giỏ hàng</a>
+                                                        <span class="txtbl">Giỏ hàng</span>
                                                     </span>
                                                 </button>
-
+                                                <span class="box-triangle">
+                                                    <svg viewBox="0 0 20 9" role="presentation">
+                                                        <path
+                                                            d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                            fill="#ffffff"></path>
+                                                    </svg>
+                                                </span>
                                             </div>
-
-
+    
+                                            <div class="header-action_dropdown">
+                                                <div class="header-dropdown_content">
+    
+    
+    
+    
+                                                    <div class="sitenav-content sitenav-cart">
+                                                        <p class="boxtitle">Giỏ hàng</p>
+                                                        <div class="cart-view clearfix">
+                                                            <div class="cart-view-scroll">
+                                                                <table class="clone-item-cart table-clone-cart">
+                                                                    <tbody>
+                                                                        <tr class="mini-cart__item d-none">
+                                                                            <td class="mini-cart__left"><a class="mnc-link"
+                                                                                    href="#" title=""><img src="/"
+                                                                                        alt=""></a>
+                                                                            </td>
+                                                                            <td class="mini-cart__right">
+                                                                                <p class="mini-cart__title">
+                                                                                    <a class="mnc-title mnc-link" href="#"
+                                                                                        title=""></a>
+                                                                                    <span class="mnc-variant"> </span>
+                                                                                </p>
+                                                                                <div class="mini-cart__quantity">
+                                                                                    <button class="qty-btn mnc-minus">
+                                                                                        <svg width="18" height="18"
+                                                                                            viewBox="0 0 20 20"
+                                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                                            <rect height="1" width="18"
+                                                                                                y="9" x="1"></rect>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                    <input class="qty-value" type="text"
+                                                                                        readonly="" name="mnc-quantity"
+                                                                                        value="">
+                                                                                    <button class="qty-btn mnc-plus">
+                                                                                        <svg width="18" height="18"
+                                                                                            viewBox="0 0 20 20"
+                                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                                            <rect x="9" y="1" width="1"
+                                                                                                height="17"></rect>
+                                                                                            <rect x="1" y="9" width="17"
+                                                                                                height="1"></rect>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="mini-cart__price">
+                                                                                    <span class="mnc-price">0₫</span>
+                                                                                    <del class="mnc-ori-price"></del>
+                                                                                </div>
+                                                                                <div class="mini-cart__remove"></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="table-cart-view">
+    
+                                                                    <tbody>
+                                                                        <tr class="mini-cart__empty">
+                                                                            <td>
+                                                                                <div class="svgico-mini-cart">
+                                                                                    <svg width="81" height="70"
+                                                                                        viewBox="0 0 81 70">
+                                                                                        <g transform="translate(0 2)"
+                                                                                            stroke-width="4" fill="none"
+                                                                                            fill-rule="evenodd">
+                                                                                            <circle stroke-linecap="square"
+                                                                                                cx="34" cy="60" r="6">
+                                                                                            </circle>
+                                                                                            <circle stroke-linecap="square"
+                                                                                                cx="67" cy="60" r="6">
+                                                                                            </circle>
+                                                                                            <path
+                                                                                                d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547">
+                                                                                            </path>
+                                                                                        </g>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                Hiện chưa có sản phẩm
+                                                                            </td>
+                                                                        </tr>
+    
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="cart-view-line"></div>
+                                                            <div class="cart-view-total">
+                                                                <table class="table-total">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="mnc-total text-left">TỔNG TIỀN:</td>
+                                                                            <td
+                                                                                class="mnc-total text-right total-view-cart">
+                                                                                0₫
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="mini-cart__button">
+                                                                            <td colspan="2"><a href="/Cart.html"
+                                                                                    class="linktocart button ">Xem giỏ
+                                                                                    hàng</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
