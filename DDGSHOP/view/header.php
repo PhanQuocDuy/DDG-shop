@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,29 +22,10 @@
 </head>
 
 <body>
-    <div id="templateHeader">
-        <div class="mainHeader--height" style="min-height: 183.7px;">
+<div id="templateHeader">
+        <div class="mainHeader--height" style="min-height: 202.55px;">
             <header class="mainHeader mainHeader_temp03" id="site-header">
                 <div class="site-header-top">
-                    <div class="container-fluid">
-                        <div class="box-content d-flex align-items-center justify-content-between">
-                            <div class="box-left d-flex flex-wrap align-items-center">
-                                <div class="hotline">
-                                    <span>Hotline: <b>0968 239 497 - 097 221 6881</b> * Tư vấn build PC:
-                                        <b>0986552233</b> * Địa chỉ: CS1: <b>180D Thái Thịnh</b> CS2: <b> 83-85 Thái Hà
-                                            - Đống Đa - Hà Nội </b> CS3: <b>40 Đường Vĩnh Viễn - Q10 - TP.HCM
-                                        </b></span>
-                                </div>
-                                <div class="contact">
-                                    <a href="https://shope.ee/5pbD6SPnDV">Mua tại Shopee</a>
-                                </div>
-                            </div>
-                            <div class="box-right">
-                                <ul class="d-flex align-items-center">
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="mainHeader-middle">
                     <div class="container-fluid container-pd">
@@ -59,22 +41,11 @@
                                                     <span class="hamburger-menu" aria-hidden="true">
                                                         <span class="bar"></span>
                                                     </span>
-                                                    <span class="box-icon--close">
-                                                        <svg viewBox="0 0 19 19" role="presentation">
-                                                            <path
-                                                                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
-                                                                fill-rule="evenodd"></path>
-                                                        </svg>
-                                                    </span>
+
                                                 </span>
                                                 <span class="box-tmenu">MENU</span>
                                             </a>
                                             <span class="box-triangle">
-                                                <svg viewBox="0 0 20 9" role="presentation">
-                                                    <path
-                                                        d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
-                                                        fill="#ffffff"></path>
-                                                </svg>
                                             </span>
                                         </div>
                                     </div>
@@ -82,19 +53,11 @@
                             </div>
                             <div class="header-wrap-logo">
                                 <div class="wrap-logo" itemscope="" itemtype="http://schema.org/Organization">
-
-
-                                    <a href="https://ttgshop.vn" itemprop="url">
-                                        <img itemprop="logo"
-                                            src="//theme.hstatic.net/1000288298/1001020793/14/logo.png?v=280"
+                                    <a href="/DDG.html" itemprop="url">
+                                        <img itemprop="logo" src="/DDGSHOP/img/DDGSHOPlogo.png"
                                             alt="TTGShop - Phụ kiện Game Thủ |Tư vấn Build PC| giá rẻ - www.ttgshop.vn"
                                             class="img-responsive logoimg ls-is-cached lazyloaded">
                                     </a>
-                                    <h1 style="display:none"><a href="https://ttgshop.vn" itemprop="url">TTGShop - Phụ
-                                            kiện Game Thủ |Tư vấn Build PC| giá rẻ - www.ttgshop.vn</a></h1>
-
-
-
                                 </div>
                             </div>
                             <div class="header-wrap-search">
@@ -221,7 +184,7 @@
                                                             <div class="sitenav-content__block">
 
 
-                                                                <form accept-charset="UTF-8" action="/account/login"
+                                                                <form accept-charset="UTF-8" action="/Login.html"
                                                                     id="customer_login" method="post">
                                                                     <input name="form_type" type="hidden"
                                                                         value="customer_login">
@@ -265,19 +228,19 @@
                                                                         class="form__submit button dark"
                                                                         id="form_submit-login">Đăng nhập</button>
 
-                                                                    <input id="d47b2016d6074c3fb9fad2c4fea9a6eb"
+                                                                    <input id="7a95ae40e8b9499f93411f172743d7ca"
                                                                         name="g-recaptcha-response"
                                                                         type="hidden"><noscript
                                                                         data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function()
                                                                         {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-',
                                                                         {action: 'submit'}).then(function(token)
-                                                                        {document.getElementById('d47b2016d6074c3fb9fad2c4fea9a6eb').value
+                                                                        {document.getElementById('7a95ae40e8b9499f93411f172743d7ca').value
                                                                         = token;});});</noscript>
                                                                 </form>
 
                                                                 <div class="site_account_secondary-action">
                                                                     <p>Khách hàng mới?
-                                                                        <a class="link" href="/account/register">Tạo tài
+                                                                        <a class="link" href="/Register.html">Tạo tài
                                                                             khoản</a>
                                                                     </p>
                                                                     <p>Quên mật khẩu?
@@ -328,13 +291,13 @@
                                                                         class="form__submit button dark"
                                                                         id="form_submit-recover">Khôi phục</button>
 
-                                                                    <input id="d0a737eb750440149f4d68f76f9653f6"
+                                                                    <input id="4884ec76fb7442abae1dbc4e728fca2f"
                                                                         name="g-recaptcha-response"
                                                                         type="hidden"><noscript
                                                                         data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function()
                                                                         {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-',
                                                                         {action: 'submit'}).then(function(token)
-                                                                        {document.getElementById('d0a737eb750440149f4d68f76f9653f6').value
+                                                                        {document.getElementById('4884ec76fb7442abae1dbc4e728fca2f').value
                                                                         = token;});});</noscript>
                                                                 </form>
                                                                 <div class="site_account_secondary-action">
@@ -399,6 +362,7 @@
 
 
 
+
                                                 <div class="sitenav-content sitenav-cart">
                                                     <p class="boxtitle">Giỏ hàng</p>
                                                     <div class="cart-view clearfix">
@@ -408,7 +372,8 @@
                                                                     <tr class="mini-cart__item d-none">
                                                                         <td class="mini-cart__left"><a class="mnc-link"
                                                                                 href="#" title=""><img src="/"
-                                                                                    alt=""></a></td>
+                                                                                    alt=""></a>
+                                                                        </td>
                                                                         <td class="mini-cart__right">
                                                                             <p class="mini-cart__title">
                                                                                 <a class="mnc-title mnc-link" href="#"
@@ -448,11 +413,12 @@
                                                                 </tbody>
                                                             </table>
                                                             <table class="table-cart-view">
+
                                                                 <tbody>
                                                                     <tr class="mini-cart__empty">
                                                                         <td>
-                                                                            <div class="svgico-mini-cart"> <svg
-                                                                                    width="81" height="70"
+                                                                            <div class="svgico-mini-cart">
+                                                                                <svg width="81" height="70"
                                                                                     viewBox="0 0 81 70">
                                                                                     <g transform="translate(0 2)"
                                                                                         stroke-width="4" fill="none"
@@ -467,9 +433,12 @@
                                                                                             d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547">
                                                                                         </path>
                                                                                     </g>
-                                                                                </svg></div> Hiện chưa có sản phẩm
+                                                                                </svg>
+                                                                            </div>
+                                                                            Hiện chưa có sản phẩm
                                                                         </td>
                                                                     </tr>
+
                                                                 </tbody>
                                                             </table>
                                                         </div>
@@ -481,457 +450,24 @@
                                                                         <td class="mnc-total text-left">TỔNG TIỀN:</td>
                                                                         <td
                                                                             class="mnc-total text-right total-view-cart">
-                                                                            0₫</td>
+                                                                            0₫
+                                                                        </td>
                                                                     </tr>
                                                                     <tr class="mini-cart__button">
                                                                         <td colspan="2"><a href="/Cart.html"
                                                                                 class="linktocart button ">Xem giỏ
-                                                                                hàng</a></td>
-
+                                                                                hàng</a>
+                                                                        </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                         </div>
                                                     </div>
-
                                                 </div>
-
-
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-bottom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-cus">
-                                <div class="sidebar-content">
-                                    <div class="title-menu ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" x="0" y="0"
-                                            viewBox="0 0 60.123 60.123" style="enable-background:new 0 0 512 512"
-                                            xml:space="preserve">
-                                            <g>
-                                                <g xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M57.124,51.893H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,51.893,57.124,51.893z">
-                                                    </path>
-                                                    <path
-                                                        d="M57.124,33.062H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3   C60.124,31.719,58.781,33.062,57.124,33.062z">
-                                                    </path>
-                                                    <path
-                                                        d="M57.124,14.231H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,14.231,57.124,14.231z">
-                                                    </path>
-                                                    <circle cx="4.029" cy="11.463" r="4.029"></circle>
-                                                    <circle cx="4.029" cy="30.062" r="4.029"></circle>
-                                                    <circle cx="4.029" cy="48.661" r="4.029"></circle>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span>Danh mục sản phẩm</span>
-                                    </div>
-                                    <div class="sidebar-menu sidebar-menu--colum sidebar-menu--index">
-                                        <div class="main-menu mainMenujs setHeight">
-                                            <ul class="link-list list-root">
-
-
-
-
-                                                <li class="item ">
-                                                    <a href="/collections/ao-ttg" title="Dành cho Cter">
-                                                        Dành cho Cter
-                                                    </a>
-                                                </li>
-
-
-
-
-                                                <li class="item submenu " data-menu-root="105532823">
-                                                    <a href="/collections/pc"
-                                                        title="PC - Máy tính chơi game , Làm việc">
-                                                        PC - Máy tính chơi game , Làm việc
-                                                    </a>
-                                                    <div class="dropdown_menu">
-                                                        <div class="d-flex flex-wrap">
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/pc-workstation-2d-3d"
-                                                                        title="PC workstation">PC workstation</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/pc" title="PC chơi game">PC
-                                                                        chơi game</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-
-
-
-                                                <li class="item submenu " data-menu-root="105527718">
-                                                    <a href="/" title="Linh kiện máy tính">
-                                                        Linh kiện máy tính
-                                                    </a>
-                                                    <div class="dropdown_menu">
-                                                        <div class="d-flex flex-wrap">
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/" title="🕹 Gaming Gear">🕹 Gaming
-                                                                        Gear</a></h3>
-                                                                <ul class="has_submenu">
-
-
-                                                                    <li><a href="/collections/ban-phim"
-                                                                            title="⌨️ Bàn phím">⌨️ Bàn phím</a></li>
-
-
-
-                                                                    <li><a href="/collections/chuot"
-                                                                            title="🖱️ Chuột">🖱️ Chuột</a></li>
-
-
-
-                                                                    <li><a href="/collections/tay-cam-choi-game"
-                                                                            title="🎮 Tay cầm chơi game">🎮 Tay cầm chơi
-                                                                            game</a></li>
-
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/cpu" title="CPU">CPU</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/vga-cu" title="VGA cũ">VGA
-                                                                        cũ</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/card-hoa-moi"
-                                                                        title="VGA Mới">VGA Mới</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/o-cung-ssd-hdd"
-                                                                        title="SSD/HDD">SSD/HDD</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/man-hinh-may-tinh"
-                                                                        title="Màn hình">Màn hình</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/ram" title="RAM">RAM</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/mainboard-1"
-                                                                        title="Mainboard">Mainboard</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/vo-case" title="Vỏ Case">Vỏ
-                                                                        Case</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/nguon"
-                                                                        title="Nguồn (PSU)">Nguồn (PSU)</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/tan-nhiet"
-                                                                        title="💨 Tản nhiệt">💨 Tản nhiệt</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-
-
-
-                                                <li class="item submenu " data-menu-root="105002687">
-                                                    <a href="/collections/smarthome-viet" title="Smarthome">
-                                                        Smarthome
-                                                    </a>
-                                                    <div class="dropdown_menu">
-                                                        <div class="d-flex flex-wrap">
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/yeelight"
-                                                                        title="Yeelight">Yeelight</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <h3><a href="/collections/smarthome"
-                                                                        title="GratIOT">GratIOT</a></h3>
-                                                                <ul class="has_submenu">
-
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-
-
-
-                                                <li class="item ">
-                                                    <a href="/collections/balo-tui" title="Balo - Túi xách">
-                                                        Balo - Túi xách
-                                                    </a>
-                                                </li>
-
-
-
-
-                                                <li class="item ">
-                                                    <a href="/collections/onebot-xiaomi" title="Onebot (Xiaomi)">
-                                                        Onebot (Xiaomi)
-                                                    </a>
-                                                </li>
-
-
-
-
-                                                <li class="item ">
-                                                    <a href="/pages/tu-van-build-pc-ttgshop"
-                                                        title="Build PC theo nhu cầu">
-                                                        Build PC theo nhu cầu
-                                                    </a>
-                                                </li>
-
-
-
-
-                                                <li class="item ">
-                                                    <a href="https://shope.ee/9zVxsd2MeQ" title="TTG tại Shopee">
-                                                        TTG tại Shopee
-                                                    </a>
-                                                </li>
-
-
-
-
-                                                <li class="item ">
-                                                    <a href="https://www.lazada.vn/shop/tructiepgame/?spm=a2o4n.pdp_revamp.seller.1.44eb108dh6uJcG&amp;itemId=2157073961&amp;channelSource=pdp"
-                                                        title="TTG tại Lazada">
-                                                        TTG tại Lazada
-                                                    </a>
-                                                </li>
-
-
-
-                                            </ul>
-                                            <ul class="link-list list-child" id="105532823">
-                                                <li><a href="javascript:;"><i class="fa fa-angle-left"
-                                                            aria-hidden="true"></i>Quay về</a></li>
-                                                <li><a href="/collections/pc"><b>Xem tất cả "PC - Máy tính chơi game ,
-                                                            Làm việc"</b></a></li>
-                                                <li class="">
-                                                    <a href="/collections/pc-workstation-2d-3d"><span>-</span>PC
-                                                        workstation</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/pc"><span>-</span>PC chơi game</a>
-                                                </li>
-                                            </ul>
-                                            <ul class="link-list list-child" id="105527718">
-                                                <li><a href="javascript:;"><i class="fa fa-angle-left"
-                                                            aria-hidden="true"></i>Quay về</a></li>
-                                                <li><a href="/"><b>Xem tất cả "Linh kiện máy tính"</b></a></li>
-                                                <li class="level-2 active" data-menu-root="105545447">
-                                                    <a class="parent-child" href="/">
-                                                        <span>-</span>🕹 Gaming Gear
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/cpu"><span>-</span>CPU</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/vga-cu"><span>-</span>VGA cũ</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/card-hoa-moi"><span>-</span>VGA Mới</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/o-cung-ssd-hdd"><span>-</span>SSD/HDD</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/man-hinh-may-tinh"><span>-</span>Màn hình</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/ram"><span>-</span>RAM</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/mainboard-1"><span>-</span>Mainboard</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/vo-case"><span>-</span>Vỏ Case</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/nguon"><span>-</span>Nguồn (PSU)</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/tan-nhiet"><span>-</span>💨 Tản nhiệt</a>
-                                                </li>
-                                            </ul>
-                                            <ul class="link-list list-child" id="105002687">
-                                                <li><a href="javascript:;"><i class="fa fa-angle-left"
-                                                            aria-hidden="true"></i>Quay về</a></li>
-                                                <li><a href="/collections/smarthome-viet"><b>Xem tất cả
-                                                            "Smarthome"</b></a></li>
-                                                <li class="">
-                                                    <a href="/collections/yeelight"><span>-</span>Yeelight</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="/collections/smarthome"><span>-</span>GratIOT</a>
-                                                </li>
-                                            </ul>
-
-                                            <ul class="link-list sub-child" id="105545447">
-                                                <li><a href="javascript:;"><i class="fa fa-angle-left"
-                                                            aria-hidden="true"></i>Quay về</a></li>
-                                                <li><a href="/"><b>Xem tất cả "🕹 Gaming Gear"</b></a></li>
-                                                <li>
-                                                    <a href="/collections/ban-phim" title="⌨️ Bàn phím"><span>-</span>⌨️
-                                                        Bàn phím</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/collections/chuot" title="🖱️ Chuột"><span>-</span>🖱️
-                                                        Chuột</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/collections/tay-cam-choi-game"
-                                                        title="🎮 Tay cầm chơi game"><span>-</span>🎮 Tay cầm chơi
-                                                        game</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="site-overlay"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg d-lg-flex d-none justify-content-between align-items-center box-content">
-                                <div class="box-policy">
-                                    <ul>
-                                        <li class="box-item">
-                                            <div class="box-icon">
-                                                <img src="//theme.hstatic.net/1000288298/1001020793/14/header_03_policy_1_ico.png?v=280"
-                                                    alt="Đảm bảo chất lượng">
-                                            </div>
-                                            <div class="box-text">Đảm bảo chất lượng</div>
-                                        </li>
-                                        <li class="box-item">
-                                            <div class="box-icon">
-                                                <img src="//theme.hstatic.net/1000288298/1001020793/14/header_03_policy_2_ico.png?v=280"
-                                                    alt="Mở hộp kiểm tra nhận hàng">
-                                            </div>
-                                            <div class="box-text">Mở hộp kiểm tra nhận hàng</div>
-                                        </li>
-                                        <li class="box-item">
-                                            <div class="box-icon">
-                                                <img src="//theme.hstatic.net/1000288298/1001020793/14/header_03_policy_3_ico.png?v=280"
-                                                    alt="Vận chuyển siêu tốc">
-                                            </div>
-                                            <div class="box-text">Vận chuyển siêu tốc</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="box-live">
-                                    <button type="button" class="btn-live">Review</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-search-mobile">
-                    <div class=" search-box wpo-wrapper-search">
-                        <form action="/search" class="searchform-mobile searchform-categoris ultimate-search">
-                            <div class="wpo-search-inner">
-                                <input type="hidden" name="type" value="product">
-                                <input required="" id="inputSearchAuto-mb" class="input-search" name="q" maxlength="40"
-                                    autocomplete="off" type="text" size="20" placeholder="Tìm kiếm sản phẩm...">
-                            </div>
-                            <button type="submit" class="btn-search btn" id="search-header-btn-mb">
-                                <span class="search-icon"><svg version="1.1" class="svg search"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;"
-                                        xml:space="preserve">
-                                        <path
-                                            d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z">
-                                        </path>
-                                        <rect x="17" y="17"
-                                            transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)" width="4"
-                                            height="8"></rect>
-                                    </svg></span>
-                                <span class="search-close"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" viewBox="0 0 24 24">
-                                        <path
-                                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                    </svg></span>
-                            </button>
-                        </form>
-                        <div id="ajaxSearchResults-mb" class="smart-search-wrapper ajaxSearchResults"
-                            style="display: none">
-                            <div class="resultsContent"></div>
-                            <div class="search-suggest">
-                                <p>Gợi ý cho bạn: </p>
-                                <ul>
-
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -939,6 +475,3 @@
             </header>
         </div>
     </div>
-</body>
-
-</html>
