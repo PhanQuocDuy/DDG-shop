@@ -123,7 +123,7 @@
                                         </div>
                                         <div class="header-action-item header-action_account">
                                             <div class="header-action_text">
-                                                <button class="header-action__link " onclick="window.location.reload();"
+                                                <button class="header-action__link  header-action_clicked "
                                                     id="site-account-handle" aria-label="Tài khoản" title="Tài khoản"
                                                     type="button">
                                                     <span class="box-icon">
@@ -143,8 +143,16 @@
                                                             </svg>
                                                         </span>
                                                     </span>
+<<<<<<< HEAD
                                                     <a href="/Login.html" class="box-text"> Đăng nhập </a>
                                                     <a href="/Register.html" class="box-text">/ Đăng ký </a>
+=======
+                                                    <span class="box-text">
+                                                        Đăng nhập / Đăng ký
+                                                        <span class="txtbl">Tài khoản của tôi <i class="fa fa-angle-down"
+                                                                aria-hidden="true"></i></span>
+                                                    </span>
+>>>>>>> a74995cc1139f25e5d1b9753ac6c5e6aed05a646
                                                 </button>
                                                 <span class="box-triangle">
                                                     <svg viewBox="0 0 20 9" role="presentation">
@@ -155,6 +163,161 @@
                                                 </span>
                                             </div>
     
+<<<<<<< HEAD
+=======
+                                            <div class="header-action_dropdown ">
+                                                <div class="header-dropdown_content">
+                                                    <div class="sitenav-content sitenav-account " id="siteNav-account">
+                                                        <button class="btnclose" aria-label="button close">
+                                                            <svg viewBox="0 0 19 19" role="presentation">
+                                                                <path
+                                                                    d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="site_account_panel_list">
+                                                            <div id="header-login-panel"
+                                                                class="site_account_panel site_account_default is-selected">
+                                                                <div class="sitenav-content__title">
+                                                                    <p class="txt-title">Đăng nhập tài khoản</p>
+                                                                    <p class="txt-subtitle">Nhập email và mật khẩu của bạn:
+                                                                    </p>
+                                                                </div>
+                                                                <div class="sitenav-content__block">
+    
+    
+                                                                    <form accept-charset="UTF-8" action="/Login.html"
+                                                                        id="customer_login" method="post">
+                                                                        <input name="form_type" type="hidden"
+                                                                            value="customer_login">
+                                                                        <input name="utf8" type="hidden" value="✓">
+    
+    
+                                                                        <div
+                                                                            class="form__input-wrapper form__input-wrapper--labelled">
+                                                                            <input type="email" id="login-customer[email]"
+                                                                                class="form__field form__field--text"
+                                                                                name="customer[email]" required="required">
+                                                                            <label for="login-customer[email]"
+                                                                                class="form__floating-label">Email</label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="form__input-wrapper form__input-wrapper--labelled">
+    
+                                                                            <input type="password"
+                                                                                id="login-customer[password]"
+                                                                                class="form__field form__field--text"
+                                                                                name="customer[password]"
+                                                                                required="required"
+                                                                                autocomplete="current-password">
+                                                                            <label for="login-customer[password]"
+                                                                                class="form__floating-label">Mật
+                                                                                khẩu</label>
+    
+                                                                            <div class="sitebox-recaptcha">
+                                                                                This site is protected by reCAPTCHA and the
+                                                                                Google
+                                                                                <a href="https://policies.google.com/privacy"
+                                                                                    target="_blank" rel="noreferrer">Privacy
+                                                                                    Policy</a>
+                                                                                and <a
+                                                                                    href="https://policies.google.com/terms"
+                                                                                    target="_blank" rel="noreferrer">Terms
+                                                                                    of Service</a> apply.
+                                                                            </div>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="form__submit button dark"
+                                                                            id="form_submit-login">Đăng nhập</button>
+    
+                                                                        <input id="7a95ae40e8b9499f93411f172743d7ca"
+                                                                            name="g-recaptcha-response"
+                                                                            type="hidden"><noscript
+                                                                            data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function()
+                                                                            {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-',
+                                                                            {action: 'submit'}).then(function(token)
+                                                                            {document.getElementById('7a95ae40e8b9499f93411f172743d7ca').value
+                                                                            = token;});});</noscript>
+                                                                    </form>
+    
+                                                                    <div class="site_account_secondary-action">
+                                                                        <p>Khách hàng mới?
+                                                                            <a class="link" href="/Register.html">Tạo tài
+                                                                                khoản</a>
+                                                                        </p>
+                                                                        <p>Quên mật khẩu?
+                                                                            <button aria-controls="header-recover-panel"
+                                                                                class="js-link link">Khôi phục mật
+                                                                                khẩu</button>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="header-recover-panel"
+                                                                class="site_account_panel site_account_sliding">
+                                                                <div class="sitenav-content__title">
+                                                                    <p class="txt-title">Khôi phục mật khẩu</p>
+                                                                    <p class="txt-subtitle">Nhập email của bạn:</p>
+                                                                </div>
+                                                                <div class="sitenav-content__block">
+    
+    
+                                                                    <form accept-charset="UTF-8" action="/account/recover"
+                                                                        method="post">
+                                                                        <input name="form_type" type="hidden"
+                                                                            value="recover_customer_password">
+                                                                        <input name="utf8" type="hidden" value="✓">
+    
+    
+                                                                        <div
+                                                                            class="form__input-wrapper form__input-wrapper--labelled">
+                                                                            <input type="email"
+                                                                                id="recover-customer[recover_email]"
+                                                                                class="form__field form__field--text"
+                                                                                name="email" required="required">
+                                                                            <label for="recover-customer[recover_email]"
+                                                                                class="form__floating-label">Email</label>
+                                                                            <div class="sitebox-recaptcha">
+                                                                                This site is protected by reCAPTCHA and the
+                                                                                Google
+                                                                                <a href="https://policies.google.com/privacy"
+                                                                                    target="_blank" rel="noreferrer">Privacy
+                                                                                    Policy</a>
+                                                                                and <a
+                                                                                    href="https://policies.google.com/terms"
+                                                                                    target="_blank" rel="noreferrer">Terms
+                                                                                    of Service</a> apply.
+                                                                            </div>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="form__submit button dark"
+                                                                            id="form_submit-recover">Khôi phục</button>
+    
+                                                                        <input id="4884ec76fb7442abae1dbc4e728fca2f"
+                                                                            name="g-recaptcha-response"
+                                                                            type="hidden"><noscript
+                                                                            data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function()
+                                                                            {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-',
+                                                                            {action: 'submit'}).then(function(token)
+                                                                            {document.getElementById('4884ec76fb7442abae1dbc4e728fca2f').value
+                                                                            = token;});});</noscript>
+                                                                    </form>
+                                                                    <div class="site_account_secondary-action">
+                                                                        <p>Bạn đã nhớ mật khẩu?
+                                                                            <button aria-controls="header-login-panel"
+                                                                                class="js-link link">Trở về đăng
+                                                                                nhập</button>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+    
+>>>>>>> a74995cc1139f25e5d1b9753ac6c5e6aed05a646
                                         </div>
                                         <div class="header-action-item header-action_cart">
                                             <div class="header-action_text">
@@ -294,7 +457,11 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr class="mini-cart__button">
+<<<<<<< HEAD
                                                                             <td colspan="2"><a href="/cart"
+=======
+                                                                            <td colspan="2"><a href="/Cart.html"
+>>>>>>> a74995cc1139f25e5d1b9753ac6c5e6aed05a646
                                                                                     class="linktocart button ">Xem giỏ
                                                                                     hàng</a>
                                                                             </td>
