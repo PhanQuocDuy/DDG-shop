@@ -3157,7 +3157,6 @@ img.lazyload:not([src]) {
 
 @media (min-width: 992px) {
   .mainHeader.mainHeader_temp03 .mainHeader-middle {
-    position: fixed;
     width: 100%;
     padding: 15px 0; }
   .mainHeader.mainHeader_temp03 .header-wrap-action .header-action .header-action-item .header-action_text .header-action__link .box-icon .pulse {
