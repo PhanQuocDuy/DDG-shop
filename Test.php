@@ -25,23 +25,23 @@
 
 
     <?php include("./DDGSHOP/view/header.php"); 
-   
-   switch ($act){
-        case "":
-            include("");
-            break;
-        default :
-            include("");
-            break;
-   }
+
+         switch ($act){
+                case "":
+                    include("");
+                    break;
+                 default :
+                    include("");
+                    break;
+        };
  
     
 
    
- include("./DDGSHOP/view/main.php");
+    include("./DDGSHOP/view/main.php"); 
    
     
-   include("./DDGSHOP/view/footer.php"); ?>
+    include("./DDGSHOP/view/footer.php"); ?>
 
 
 </body>
