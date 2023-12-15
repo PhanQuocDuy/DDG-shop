@@ -43,7 +43,7 @@
                         <div class="content-footer block-collapse">
                             <ul class="footerNav-link">
                                 <li class="item">
-                                    <a href="./Bank.php" title="Tài Khoản Ngân Hàng">Tài Khoản Ngân Hàng</a>
+                                    <a href="./DDGSHOP/pages/allpages/bank" title="Tài Khoản Ngân Hàng">Tài Khoản Ngân Hàng</a>
                                 </li>
                             </ul>
                         </div>
@@ -54,7 +54,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            <p>Copyright © 2023 <a href="./DDG.html"> DDGShop - Phụ kiện Game Thủ |Tư vấn Build PC| giá rẻ</a>
+            <p>Copyright © 2023 <a href="./DDGSHOP/index.php"> DDGShop - Phụ kiện Game Thủ |Tư vấn Build PC| giá rẻ</a>
             </p>
         </div>
     </div>
