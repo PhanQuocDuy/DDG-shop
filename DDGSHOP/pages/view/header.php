@@ -32,7 +32,6 @@
                                 <div class="wrap-logo" itemscope="" itemtype="http://schema.org/Organization">
                                     <a href="./DDGSHOP/index.php" itemprop="url">
                                         <img itemprop="logo" src="./DDGSHOP/img/DDGSHOPlogo.png"
-                                            alt="TTGShop - Phụ kiện Game Thủ |Tư vấn Build PC| giá rẻ - www.ttgshop.vn"
                                             class="img-responsive logoimg ls-is-cached lazyloaded">
                                     </a>
                                 </div>
@@ -161,7 +160,7 @@
                                                             <div class="sitenav-content__block">
 
 
-                                                                <form accept-charset="UTF-8" action="./DDGSHOP/pages/account/login.php"
+                                                                <form accept-charset="UTF-8" action="/DDGSHOP/pages/account/login.php"
                                                                     id="customer_login" method="post">
                                                                     <input name="form_type" type="hidden"
                                                                         value="customer_login">
@@ -217,7 +216,7 @@
 
                                                                 <div class="site_account_secondary-action">
                                                                     <p>Khách hàng mới?
-                                                                        <a class="link" href="./DDGSHOP/pages/account/register">Tạo tài
+                                                                        <a class="link" href="./DDGSHOP/pages/account/register.php">Tạo tài
                                                                             khoản</a>
                                                                     </p>
                                                                     <p>Quên mật khẩu?

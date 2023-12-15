@@ -25,15 +25,15 @@
 
 
     <!--Header-->
-    <?php include("./DDGSHOP/pages/header.php"); ?>
+    <?php include("./DDGSHOP/pages/view/header.php"); ?>
 
 
 
     <!--Main -->
-    <?php include("./DDGSHOP/pages/main.php"); ?>
+    <?php include("./DDGSHOP/pages/view/main.php"); ?>
    
     <!--Footer -->
-    <?php include("./DDGSHOP/pages/footer.php"); ?>
+    <?php include("./DDGSHOP/pages/view/footer.php"); ?>
 
 
 
