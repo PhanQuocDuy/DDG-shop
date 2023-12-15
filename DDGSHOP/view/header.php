@@ -54,7 +54,7 @@
                             <div class="header-wrap-logo">
                                 <div class="wrap-logo" itemscope="" itemtype="http://schema.org/Organization">
                                     <a href="/DDG.html" itemprop="url">
-                                        <img itemprop="logo" src="/DDGSHOP/img/DDGSHOPlogo.png"
+                                        <img itemprop="logo" src="./DDGSHOP/img/DDGSHOPlogo.png"
                                             alt="TTGShop - Phụ kiện Game Thủ |Tư vấn Build PC| giá rẻ - www.ttgshop.vn"
                                             class="img-responsive logoimg ls-is-cached lazyloaded">
                                     </a>

@@ -43,7 +43,7 @@
                         <div class="content-footer block-collapse">
                             <ul class="footerNav-link">
                                 <li class="item">
-                                    <a href="./Bank.html" title="Tài Khoản Ngân Hàng">Tài Khoản Ngân Hàng</a>
+                                    <a href="./Bank.php" title="Tài Khoản Ngân Hàng">Tài Khoản Ngân Hàng</a>
                                 </li>
                             </ul>
                         </div>
