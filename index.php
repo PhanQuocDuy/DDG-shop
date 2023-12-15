@@ -24,14 +24,24 @@
 
 
 
-    <!--Header-->
-    <?php include("./DDGSHOP/pages/view/header.php"); ?>
-
-    <!--Main -->
-    <?php include("./DDGSHOP/pages/view/main.php"); ?>
+    <?php include("./DDGSHOP/view/header.php"); 
    
-    <!--Footer -->
-    <?php include("./DDGSHOP/pages/view/footer.php"); ?>
+   switch ($act){
+        case "":
+            include("");
+            break;
+        default :
+            include("");
+            break;
+   }
+ 
+    
+
+   
+ include("./DDGSHOP/view/main.php");
+   
+    
+   include("./DDGSHOP/view/footer.php"); ?>
 
 
 </body>
