@@ -30,7 +30,7 @@
                             </div>
                             <div class="header-wrap-logo">
                                 <div class="wrap-logo" itemscope="" itemtype="http://schema.org/Organization">
-                                    <a href="./DDGSHOP/index.php" itemprop="url">
+                                    <a href="index.php?act=index.php" itemprop="url">
                                         <img itemprop="logo" src="./DDGSHOP/img/DDGSHOPlogo.png"
                                             class="img-responsive logoimg ls-is-cached lazyloaded">
                                     </a>

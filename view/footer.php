@@ -43,7 +43,7 @@
                         <div class="content-footer block-collapse">
                             <ul class="footerNav-link">
                                 <li class="item">
-                                    <a href="/DDGSHOP/pages/allpages/bank" title="Tài Khoản Ngân Hàng">Tài Khoản Ngân Hàng</a>
+                                    <a href="index.php?act=act=bank.php" title="Tài Khoản Ngân Hàng">Tài Khoản Ngân Hàng</a>
                                 </li>
                             </ul>
                         </div>

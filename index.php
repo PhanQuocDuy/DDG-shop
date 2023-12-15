@@ -27,17 +27,11 @@
     <!--Header-->
     <?php include("./DDGSHOP/pages/view/header.php"); ?>
 
-
-
     <!--Main -->
     <?php include("./DDGSHOP/pages/view/main.php"); ?>
    
     <!--Footer -->
     <?php include("./DDGSHOP/pages/view/footer.php"); ?>
-
-
-
-
 
 
 </body>
