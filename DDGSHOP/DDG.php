@@ -24,7 +24,7 @@
 
 
 
-    <?php include("./DDGSHOP/view/header.php"); 
+    <?php include("./view/header.php"); 
 
          switch ($act){
                 case "":
@@ -38,10 +38,10 @@
     
 
    
-    include("./DDGSHOP/view/main.php"); 
+    include("./view/main.php"); 
    
     
-    include("./DDGSHOP/view/footer.php"); ?>
+    include("./view/footer.php"); ?>
 
 
 </body>
