@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon-->
+    <link rel="stylesheet" href="./DDGSHOP/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./DDGSHOP/fonts/fontawesome/all.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./DDGSHOP/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./DDGSHOP/CSS/style-themes.scss.css">
+    <link rel="stylesheet" href="./DDGSHOP/CSS/style-customer.css">
+    <!--JS-->
+    <script src="./DDGSHOP/JS/Test.js"></script>
+    <script src="./DDGSHOP/JS/bootstrap.bundle.min.js"></script>
+    <script src="./DDGSHOP/JS/jquery-3.5.1.min.js"></script>
+    <script src="./DDGSHOP/JS/scripts.js"></script>
+    <script src="./DDGSHOP/JS/Test.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div id="templateHeader">
+        <div class="mainHeader--height" style="min-height: 202.55px;">
+            <header class="mainHeader mainHeader_temp03" id="site-header">
+                <div class="site-header-top">
+                </div>
+                <div class="mainHeader-middle">
+                    <div class="container-fluid container-pd">
+                        <div class="flex-container-header">
+
+                            <div class="header-wrap-logo">
+                                <div class="wrap-logo" itemscope="" itemtype="http://schema.org/Organization">
+                                    <a href="./DDG.html" itemprop="url">
+                                        <img itemprop="logo" src="./DDGSHOP/img/DDGSHOPlogo.png"
+                                            class="img-responsive logoimg ls-is-cached lazyloaded">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-wrap-search">
+                                <div class="header-search">
+                                    <div class="search-box wpo-wrapper-search">
+                                        <form action="/search"
+                                            class="searchform-product searchform-categoris ultimate-search">
+                                            <div class="wpo-search-inner">
+                                                <input type="hidden" name="type" value="product">
+                                                <input required="" id="inputSearchAuto-3" class="input-search" name="q"
+                                                    maxlength="40" autocomplete="off" type="text" size="20"
+                                                    placeholder="Tìm kiếm sản phẩm...">
+                                            </div>
+                                            <button type="submit" class="btn-search btn">
+                                                <svg class="svg search" viewBox="0 0 24 27"
+                                                    style="enable-background:new 0 0 24 27;" xml:space="preserve">
+                                                    <path
+                                                        d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z">
+                                                    </path>
+                                                    <rect x="17" y="17"
+                                                        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)"
+                                                        width="4" height="8"></rect>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                        <div id="ajaxSearchResults-3" class="smart-search-wrapper ajaxSearchResults"
+                                            style="display: none">
+                                            <div class="resultsContent"></div>
+                                            <div class="search-suggest">
+                                                <p>Gợi ý cho bạn: </p>
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-wrap-action">
+                                <div class="header-action">
+                                    <div class="header-action-item header-action_search">
+                                        <div class="header-action_text">
+                                            <button class="header-action__link header-action_clicked"
+                                                id="site-search-handle" aria-label="Tìm kiếm" title="Tìm kiếm"
+                                                type="button">
+                                                <span class="box-icon">
+                                                    <svg class="svg-ico-search" version="1.1" id="Capa_1" x="0px"
+                                                        y="0px" viewBox="0 0 451 451"
+                                                        style="enable-background:new 0 0 451 451;" xml:space="preserve">
+                                                        <g>
+                                                            <path
+                                                                d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z">
+                                                            </path>
+                                                        </g>
+                                                    </svg>
+                                                    <span class="box-icon--close">
+                                                        <svg viewBox="0 0 19 19" role="presentation">
+                                                            <path
+                                                                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                                fill-rule="evenodd"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="header-action-item header-action_account">
+                                        <div class="header-action_text">
+                                            <button class="header-action__link  header-action_clicked "
+                                                id="site-account-handle" aria-label="Tài khoản" title="Tài khoản"
+                                                type="button">
+                                                <span class="box-icon">
+                                                    <svg class="svg-ico-account" viewBox="0 0 1024 1024">
+                                                        <path class="path1"
+                                                            d="M486.4 563.2c-155.275 0-281.6-126.325-281.6-281.6s126.325-281.6 281.6-281.6 281.6 126.325 281.6 281.6-126.325 281.6-281.6 281.6zM486.4 51.2c-127.043 0-230.4 103.357-230.4 230.4s103.357 230.4 230.4 230.4c127.042 0 230.4-103.357 230.4-230.4s-103.358-230.4-230.4-230.4z">
+                                                        </path>
+                                                        <path class="path2"
+                                                            d="M896 1024h-819.2c-42.347 0-76.8-34.451-76.8-76.8 0-3.485 0.712-86.285 62.72-168.96 36.094-48.126 85.514-86.36 146.883-113.634 74.957-33.314 168.085-50.206 276.797-50.206 108.71 0 201.838 16.893 276.797 50.206 61.37 27.275 110.789 65.507 146.883 113.634 62.008 82.675 62.72 165.475 62.72 168.96 0 42.349-34.451 76.8-76.8 76.8zM486.4 665.6c-178.52 0-310.267 48.789-381 141.093-53.011 69.174-54.195 139.904-54.2 140.61 0 14.013 11.485 25.498 25.6 25.498h819.2c14.115 0 25.6-11.485 25.6-25.6-0.006-0.603-1.189-71.333-54.198-140.507-70.734-92.304-202.483-141.093-381.002-141.093z">
+                                                        </path>
+                                                    </svg>
+                                                    <span class="box-icon--close">
+                                                        <svg viewBox="0 0 19 19" role="presentation">
+                                                            <path
+                                                                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                                fill-rule="evenodd"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="box-text">
+                                                    Đăng nhập / Đăng ký
+                                                    <span class="txtbl">Tài khoản của tôi <i class="fa fa-angle-down"
+                                                            aria-hidden="true"></i></span>
+                                                </span>
+                                            </button>
+                                            <span class="box-triangle">
+                                                <svg viewBox="0 0 20 9" role="presentation">
+                                                    <path
+                                                        d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                        fill="#ffffff"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="header-action_dropdown ">
+                                            <div class="header-dropdown_content">
+                                                <div class="sitenav-content sitenav-account " id="siteNav-account">
+                                                    <button class="btnclose" aria-label="button close">
+                                                        <svg viewBox="0 0 19 19" role="presentation">
+                                                            <path
+                                                                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                                fill-rule="evenodd"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="site_account_panel_list">
+                                                        <div id="header-login-panel"
+                                                            class="site_account_panel site_account_default is-selected">
+                                                            <div class="sitenav-content__title">
+                                                                <p class="txt-title">Đăng nhập tài khoản</p>
+                                                                <p class="txt-subtitle">Nhập email và mật khẩu của bạn:
+                                                                </p>
+                                                            </div>
+                                                            <div class="sitenav-content__block">
+
+
+                                                                <form accept-charset="UTF-8" action="./login.html"
+                                                                    id="customer_login" method="post">
+                                                                    <input name="form_type" type="hidden"
+                                                                        value="customer_login">
+                                                                    <input name="utf8" type="hidden" value="✓">
+
+
+                                                                    <div
+                                                                        class="form__input-wrapper form__input-wrapper--labelled">
+                                                                        <input type="email" id="login-customer[email]"
+                                                                            class="form__field form__field--text"
+                                                                            name="customer[email]" required="required">
+                                                                        <label for="login-customer[email]"
+                                                                            class="form__floating-label">Email</label>
+                                                                    </div>
+                                                                    <div
+                                                                        class="form__input-wrapper form__input-wrapper--labelled">
+
+                                                                        <input type="password"
+                                                                            id="login-customer[password]"
+                                                                            class="form__field form__field--text"
+                                                                            name="customer[password]"
+                                                                            required="required"
+                                                                            autocomplete="current-password">
+                                                                        <label for="login-customer[password]"
+                                                                            class="form__floating-label">Mật
+                                                                            khẩu</label>
+                                                                    </div>
+                                                                    <button type="submit"
+                                                                        class="form__submit button dark"
+                                                                        id="form_submit-login">Đăng nhập</button>
+
+                                                                    <input id="7a95ae40e8b9499f93411f172743d7ca"
+                                                                        name="g-recaptcha-response" type="hidden">
+                                                                </form>
+
+                                                                <div class="site_account_secondary-action">
+                                                                    <p>Khách hàng mới?
+                                                                        <a class="link" href="/register.html">Tạo tài
+                                                                            khoản</a>
+                                                                    </p>
+                                                                    <p>Quên mật khẩu?
+                                                                        <button aria-controls="header-recover-panel"
+                                                                            class="js-link link">Khôi phục mật
+                                                                            khẩu</button>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="header-recover-panel"
+                                                            class="site_account_panel site_account_sliding">
+                                                            <div class="sitenav-content__title">
+                                                                <p class="txt-title">Khôi phục mật khẩu</p>
+                                                                <p class="txt-subtitle">Nhập email của bạn:</p>
+                                                            </div>
+                                                            <div class="sitenav-content__block">
+                                                                <form accept-charset="UTF-8" action="/account/recover"
+                                                                    method="post">
+                                                                    <input name="form_type" type="hidden"
+                                                                        value="recover_customer_password">
+                                                                    <input name="utf8" type="hidden" value="✓">
+                                                                    <div
+                                                                        class="form__input-wrapper form__input-wrapper--labelled">
+                                                                        <input type="email"
+                                                                            id="recover-customer[recover_email]"
+                                                                            class="form__field form__field--text"
+                                                                            name="email" required="required">
+                                                                        <label for="recover-customer[recover_email]"
+                                                                            class="form__floating-label">Email</label>
+                                                                    </div>
+                                                                    <button type="submit"
+                                                                        class="form__submit button dark"
+                                                                        id="form_submit-recover">Khôi phục</button>
+
+                                                                    <input id="4884ec76fb7442abae1dbc4e728fca2f"
+                                                                        name="g-recaptcha-response" type="hidden">
+                                                                </form>
+                                                                <div class="site_account_secondary-action">
+                                                                    <p>Bạn đã nhớ mật khẩu?
+                                                                        <button aria-controls="header-login-panel"
+                                                                            class="js-link link">Trở về đăng
+                                                                            nhập</button>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-action-item header-action_cart">
+                                        <div class="header-action_text">
+                                            <button class="header-action__link  header-action_clicked "
+                                                id="site-cart-handle" aria-label="Giỏ hàng" title="Giỏ hàng"
+                                                type="button">
+                                                <span class="box-icon">
+                                                    <svg width="20px" height="20px" viewBox="0 0 512 512">
+                                                        <g transform="translate(0 512) scale(.1 -.1)">
+                                                            <path
+                                                                d="m2371 5100c-150-40-306-141-387-248l-35-48-492-58c-271-32-501-63-512-69-31-16-44-39-45-75 0-32 54-516 64-573 5-25 3-27-44-31-27-3-56-11-65-18s-78-117-155-245l-139-232-86-1660c-47-913-85-1692-85-1730 0-60 3-73 23-91l23-22h2125 2126l21 23c18 19 22 35 22 92 0 37-38 815-85 1728l-86 1660-139 232c-77 128-147 238-156 246-11 9-49 15-106 18-86 3-90 4-84 25 3 11 18 74 33 138 29 128 26 152-19 182-13 8-190 54-393 101-204 47-380 90-391 94-14 6-24 22-28 45-11 60-92 208-153 281-76 91-209 181-324 220-73 25-102 29-219 32-111 2-148-1-209-17zm318-176c139-34 279-140 353-265 21-34 36-64 34-66s-51 8-110 22c-113 28-152 27-180-4-8-9-34-96-56-192-23-95-43-182-46-191-4-14-72-44-80-35-1 1-19 139-39 306-19 167-40 311-44 320-21 39-55 45-163 33-56-7-103-10-106-7-8 8 127 68 183 81 72 18 178 17 254-2zm-329-258c0-2 14-117 30-256 17-139 27-256 23-260s-190-51-413-104c-308-74-410-102-427-118-31-29-30-70 7-220 17-67 30-128 30-135 0-10-45-13-203-13h-203l-56 478c-31 262-56 478-55 478 1 1 283 36 627 77s628 75 633 76c4 0 7-1 7-3zm1105-357c242-56 444-105 449-110 6-5-20-134-64-324l-74-315h-246-246l-82 343c-72 301-85 345-107 365-31 26-65 28-147 6-33-8-61-14-63-12-1 2 7 42 18 89l20 86 51-13c28-7 249-58 491-115zm-495-226c0-5 27-120 60-257 33-136 60-252 60-257s-276-9-643-9h-642l-28 117c-15 64-26 117-24 119 2 1 1194 291 1210 293 4 0 7-2 7-6zm-1980-282c0-9 14-119 25-203l5-38h-100c-55 0-100 3-100 6 0 18 145 244 156 244 8 0 14-4 14-9zm3239-110c39-66 71-122 71-125s-74-6-165-6-165 3-165 8c0 4 12 60 27 125l27 117h67 66l72-119zm155-373c3-35 40-733 81-1553s76-1511 78-1537l4-48h-1987-1987l4 48c2 26 37 717 78 1537s78 1518 81 1553l6 62h1818 1818l6-62z">
+                                                            </path>
+                                                            <path
+                                                                d="m1850 3209c-168-32-260-248-169-395 24-39 82-92 114-104 23-9 23-10 27-242 4-223 5-236 32-313 85-248 285-432 534-492 88-21 256-21 344 0 249 60 449 244 534 492 27 77 28 90 32 312l4 233 34 16c42 20 101 85 121 133 24 55 21 159-6 214-26 53-87 112-140 134-46 20-156 20-202 0-199-83-215-381-26-479l39-19-4-207c-5-237-17-291-88-400-225-349-715-349-940 0-71 109-83 164-88 400l-4 207 39 19c85 44 132 127 133 232 0 175-145 292-320 259z">
+                                                            </path>
+                                                        </g>
+                                                    </svg>
+                                                    <span class="box-icon--close">
+                                                        <svg viewBox="0 0 19 19" role="presentation">
+                                                            <path
+                                                                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                                fill-rule="evenodd"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="count-holder">
+                                                        <span class="count">0</span>
+                                                    </span>
+                                                </span>
+                                                <span class="box-text">
+                                                    <span class="txtbl">Giỏ hàng</span>
+                                                </span>
+                                            </button>
+                                            <span class="box-triangle">
+                                                <svg viewBox="0 0 20 9" role="presentation">
+                                                    <path
+                                                        d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                        fill="#ffffff"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="header-action_dropdown">
+                                            <div class="header-dropdown_content">
+                                                <div class="sitenav-content sitenav-cart">
+                                                    <p class="boxtitle">Giỏ hàng</p>
+                                                    <div class="cart-view clearfix">
+                                                        <div class="cart-view-scroll">
+                                                            <table class="clone-item-cart table-clone-cart">
+                                                                <tbody>
+                                                                    <tr class="mini-cart__item d-none">
+                                                                        <td class="mini-cart__left"><a class="mnc-link"
+                                                                                href="#" title=""><img src="/"
+                                                                                    alt=""></a>
+                                                                        </td>
+                                                                        <td class="mini-cart__right">
+                                                                            <p class="mini-cart__title">
+                                                                                <a class="mnc-title mnc-link" href="#"
+                                                                                    title=""></a>
+                                                                                <span class="mnc-variant"> </span>
+                                                                            </p>
+                                                                            <div class="mini-cart__quantity">
+                                                                                <button class="qty-btn mnc-minus">
+                                                                                    <svg width="18" height="18"
+                                                                                        viewBox="0 0 20 20">
+                                                                                        <rect height="1" width="18"
+                                                                                            y="9" x="1"></rect>
+                                                                                    </svg>
+                                                                                </button>
+                                                                                <input class="qty-value" type="text"
+                                                                                    readonly="" name="mnc-quantity"
+                                                                                    value="">
+                                                                                <button class="qty-btn mnc-plus">
+                                                                                    <svg width="18" height="18"
+                                                                                        viewBox="0 0 20 20">
+                                                                                        <rect x="9" y="1" width="1"
+                                                                                            height="17"></rect>
+                                                                                        <rect x="1" y="9" width="17"
+                                                                                            height="1"></rect>
+                                                                                    </svg>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="mini-cart__price">
+                                                                                <span class="mnc-price">0₫</span>
+                                                                                <del class="mnc-ori-price"></del>
+                                                                            </div>
+                                                                            <div class="mini-cart__remove"></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="table-cart-view">
+
+                                                                <tbody>
+                                                                    <tr class="mini-cart__empty">
+                                                                        <td>
+                                                                            <div class="svgico-mini-cart">
+                                                                                <svg width="81" height="70"
+                                                                                    viewBox="0 0 81 70">
+                                                                                    <g transform="translate(0 2)"
+                                                                                        stroke-width="4" fill="none"
+                                                                                        fill-rule="evenodd">
+                                                                                        <circle stroke-linecap="square"
+                                                                                            cx="34" cy="60" r="6">
+                                                                                        </circle>
+                                                                                        <circle stroke-linecap="square"
+                                                                                            cx="67" cy="60" r="6">
+                                                                                        </circle>
+                                                                                        <path
+                                                                                            d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547">
+                                                                                        </path>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </div>
+                                                                            Hiện chưa có sản phẩm
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="cart-view-line"></div>
+                                                        <div class="cart-view-total">
+                                                            <table class="table-total">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="mnc-total text-left">TỔNG TIỀN:</td>
+                                                                        <td
+                                                                            class="mnc-total text-right total-view-cart">
+                                                                            0₫
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="mini-cart__button">
+                                                                        <td colspan="2"><a href="/cart.html"
+                                                                                class="linktocart button ">Xem giỏ
+                                                                                hàng</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <section class="productDetail-information productDetail_style__01">
+        <div class="container container-pd0">
+            <div class="productDetail--main">
+                <div class="productDetail--gallery">
+                    <div class="product-container-gallery">
+                        <div class="wrapbox-gallery">
+                            <div class="wrapbox-image">
+                                <div class="productGallery_slider">
+                                    <ul class="productList-slider productCarousel-slider owl-carousel owl-loaded owl-drag"
+                                        id="productCarousel-slider">
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage"
+                                                style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1324px;">
+                                                <div class="owl-item" style="width: 331px;">
+                                                    <li class="product-gallery"
+                                                        data-image="//product.hstatic.net/1000288298/product/22b3hm_ftr_4741ed03f8a748c79c767adb894fb0a2_master.png">
+                                                        <a class="product-gallery__item" data-fancybox="gallery"
+                                                            href="//product.hstatic.net/1000288298/product/22b3hm_ftr_4741ed03f8a748c79c767adb894fb0a2_master.png">
+                                                            <img src="//product.hstatic.net/1000288298/product/22b3hm_ftr_4741ed03f8a748c79c767adb894fb0a2_master.png"
+                                                                alt=" Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz) ">
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-nav"><button type="button" role="presentation"
+                                                class="owl-prev disabled"><span
+                                                    aria-label="Previous">‹</span></button><button type="button"
+                                                role="presentation" class="owl-next"><span
+                                                    aria-label="Next">›</span></button></div>
+                                        <div class="owl-dots"><button role="button"
+                                                class="owl-dot active"><span></span></button><button role="button"
+                                                class="owl-dot"><span></span></button><button role="button"
+                                                class="owl-dot"><span></span></button><button role="button"
+                                                class="owl-dot"><span></span></button></div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productDetail--content">
+                    <div class="wrapbox-inner">
+                        <div class="wrapbox-detail">
+                            <div class="product-heading">
+                                <h1>Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz)</h1>
+
+                                <span class="pro-soldold">Tình trạng:
+
+                                    <strong>Còn hàng</strong>
+
+                                </span>
+                                <span class="pro-vendor">Thương hiệu: <strong><a title="Show vendor"
+                                            href="/collections/vendors?q=aoc">AOC</a></strong></span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-lg-8 col-md-12 col-12 p-0 wrapbox-left">
+                                <div class="wrapbox-detail">
+                                    <div class="product-price" id="price-preview">
+                                        <span class="pro-title">Giá: </span>
+                                        <span class="pro-price">1,790,000₫</span>
+
+                                    </div>
+                                    <div class="product-variants" style="display:none">
+                                        <form id="add-item-form" action="/cart/add" method="post"
+                                            class="variants clearfix">
+                                            <div class="select clearfix" style="display:none">
+                                                <select id="product-select" name="id" style="display:none;">
+
+                                                    <option value="1109329098">Default Title - 1,790,000₫</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="select-swatch clearfix">
+                                                <div id="variant-swatch-0" class="swatch clearfix" data-option="option1"
+                                                    data-option-index="0">
+                                                    <div class="title-swap header">Tiêu đề: </div>
+                                                    <div class="select-swap">
+                                                        <div data-value="Default Title"
+                                                            class="n-sd swatch-element default-title  ">
+                                                            <input class="variant-0" id="swatch-0-default-title"
+                                                                type="radio" name="option1" value="Default Title"
+                                                                data-vhandle="default-title" checked="">
+
+                                                            <label for="swatch-0-default-title">
+                                                                <span>Default Title</span>
+                                                            </label>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="product-actions">
+                                        <div class="select-actions d-none d-lg-block clearfix">
+                                            <div class="quantity-area">
+                                                <div class="quantity-title">Số lượng: </div>
+                                                <button type="button" onclick="HRT.All.minusQuantity()" class="qty-btn">
+                                                    <svg focusable="false" class="icon icon--minus " viewBox="0 0 10 2"
+                                                        role="presentation">
+                                                        <path d="M10 0v2H0V0z"></path>
+                                                    </svg>
+                                                </button>
+                                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                                    class="quantity-input">
+                                                <button type="button" onclick="HRT.All.plusQuantity()" class="qty-btn">
+                                                    <svg focusable="false" class="icon icon--plus " viewBox="0 0 10 10"
+                                                        role="presentation">
+                                                        <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="addcart-area">
+                                                <button type="button" id="add-to-cart"
+                                                    class=" add-to-cartProduct button dark btn-addtocart addtocart-modal"
+                                                    name="add">
+                                                    Thêm vào giỏ
+                                                </button>
+
+                                                <button type="button" id="buy-now"
+                                                    class="  button dark btn-buynow btnred addtocart-modal" name="add">
+                                                    Mua ngay
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-toshare">
+                                        <span>Chia sẻ: </span>
+                                        <a href="//www.facebook.com/sharer/sharer.php?u=https://ttgshop.vn/products/man-hinh-aoc-22b3hm-74-va-fhd-75hz"
+                                            target="_blank" class="share-facebook">
+                                            <i class="fa fa-facebook"></i>
+                                            <span class="ico-tooltip">Facebook</span>
+                                        </a>
+                                        <a href="https://m.me/108520260558644" target="_blank" rel="noreferrer"
+                                            aria-label="messenger" class="share-messenger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 28 28">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <g>
+                                                                        <g
+                                                                            transform="translate(-293.000000, -708.000000) translate(180.000000, 144.000000) translate(16.000000, 16.000000) translate(0.000000, 548.000000) translate(61.000000, 0.000000) translate(36.000000, 0.000000)">
+                                                                            <circle cx="14" cy="14" r="14"
+                                                                                fill="#0084FF"></circle>
+                                                                            <path fill="#FFF"
+                                                                                d="M14.848 15.928l-1.771-1.9-3.457 1.9 3.802-4.061 1.815 1.9 3.414-1.9-3.803 4.061zM14.157 7.2c-3.842 0-6.957 2.902-6.957 6.481 0 2.04 1.012 3.86 2.593 5.048V21.2l2.368-1.308c.632.176 1.302.271 1.996.271 3.842 0 6.957-2.902 6.957-6.482S17.999 7.2 14.157 7.2z">
+                                                                            </path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span class="ico-tooltip">Messenger</span>
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?text=optional%20promo%20text%20https://ttgshop.vn/products/man-hinh-aoc-22b3hm-74-va-fhd-75hz"
+                                            target="_blank" class="share-twitter">
+                                            <i class="fa fa-twitter"></i>
+                                            <span class="ico-tooltip">Twitter</span>
+                                        </a>
+                                        <a href="//pinterest.com/pin/create/link/?url=https://ttgshop.vn&amp;media=https://product.hstatic.net/1000288298/product/22b3hm_f_671937c483c843e8a604e3cfd836417e.png&amp;description=Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz)"
+                                            target="_blank" class="share-pinterest">
+                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                            <span class="ico-tooltip">Pinterest</span>
+                                        </a>
+                                        <a class="share-link" onclick="HRT.Product.copyLinkProduct()">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <span class="ico-tooltip">Sao chép url</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-12 p-0 wrapbox-right">
+                                <div class="wrapbox-detail">
+                                    <div class="d-flex flex-wrap product-deliverly">
+                                        <div class="col-lg-12 col-md-6 col-12 deliverly-inner">
+                                            <div class="title-deliverly">
+                                                <span>Chính sách bán hàng</span>
+                                            </div>
+                                            <div class="infoList-deliverly">
+                                                <div class="deliverly-item">
+                                                    <span>
+                                                        <img class=" ls-is-cached lazyloaded"
+                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_1_ico.png?v=282"
+                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_1_ico.png?v=282"
+                                                            alt="Cam kết 100% chính hãng">
+                                                    </span>
+                                                    Cam kết 100% chính hãng
+                                                </div>
+                                                <div class="deliverly-item">
+                                                    <span>
+                                                        <img class=" ls-is-cached lazyloaded"
+                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_3_ico.png?v=282"
+                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_3_ico.png?v=282"
+                                                            alt="Hỗ trợ 24/7">
+                                                    </span>
+                                                    Hỗ trợ 24/7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-6 col-12 deliverly-inner">
+                                            <div class="title-deliverly">
+                                                <span>Thông tin thêm</span>
+                                            </div>
+                                            <div class="infoList-deliverly">
+                                                <div class="deliverly-item">
+                                                    <span>
+                                                        <img class=" ls-is-cached lazyloaded"
+                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_4_ico.png?v=282"
+                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_4_ico.png?v=282"
+                                                            alt="Hoàn tiền
+111%
+nếu hàng giả">
+                                                    </span>
+                                                    Hoàn tiền
+                                                    111%
+                                                    nếu hàng giả
+                                                </div>
+                                                <div class="deliverly-item">
+                                                    <span>
+                                                        <img class=" ls-is-cached lazyloaded"
+                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_5_ico.png?v=282"
+                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_5_ico.png?v=282"
+                                                            alt="Mở hộp
+kiểm tra
+nhận hàng">
+                                                    </span>
+                                                    Mở hộp
+                                                    kiểm tra
+                                                    nhận hàng
+                                                </div>
+                                                <div class="deliverly-item">
+                                                    <span>
+                                                        <img class=" ls-is-cached lazyloaded"
+                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_6_ico.png?v=282"
+                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_6_ico.png?v=282"
+                                                            alt="Đổi trả trong
+7 ngày">
+                                                    </span>
+                                                    Đổi trả trong
+                                                    7 ngày
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-banner">
+                                        <a href="/collections/all">
+                                            <img src="//theme.hstatic.net/1000288298/1001020793/14/product_banner.jpg?v=282"
+                                                alt="product banner">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productDetailjs productDetail--box box-detail-app" id="detail-product">
+                    <div class="product-app combo-info mg-top d-none">
+                        <h3 class="combo-info--title">THƯỜNG ĐƯỢC MUA CÙNG</h3>
+                    </div>
+                </div>
+
+                <div class="productDetail--box box-detail-coupon">
+                    <div class="product-coupon coupon-initial  bgWhite mg-top">
+                        <div class="title-coupon">
+                            <h2>Khuyến mãi dành cho bạn</h2>
+                        </div>
+                        <div class="listCoupon">
+                            <div class="col-12 col-md-6 col-xl-3 coupon-item">
+                                <div class="coupon-item__inner">
+                                    <div class="coupon-item__left">
+                                        <div class="cp-img boxlazy-img">
+                                            <span class="boxlazy-img__insert">
+                                                <img class=" ls-is-cached lazyloaded"
+                                                    data-src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_1_img.png?v=282"
+                                                    src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_1_img.png?v=282"
+                                                    alt="Miễn phí vận chuyển">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-item__right">
+                                        <button type="button" class="cp-icon" data-toggle="popover"
+                                            data-container="body" data-placement="bottom"
+                                            data-popover-content="#cp-tooltip-1" data-class="coupon-popover" title=""
+                                            data-original-title="Miễn phí vận chuyển ">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <defs>
+                                                    <path id="4gg7gqe5ua"
+                                                        d="M8.333 0C3.738 0 0 3.738 0 8.333c0 4.595 3.738 8.334 8.333 8.334 4.595 0 8.334-3.739 8.334-8.334S12.928 0 8.333 0zm0 1.026c4.03 0 7.308 3.278 7.308 7.307 0 4.03-3.278 7.308-7.308 7.308-4.03 0-7.307-3.278-7.307-7.308 0-4.03 3.278-7.307 7.307-7.307zm.096 6.241c-.283 0-.512.23-.512.513v4.359c0 .283.23.513.512.513.284 0 .513-.23.513-.513V7.78c0-.283-.23-.513-.513-.513zm.037-3.114c-.474 0-.858.384-.858.858 0 .473.384.857.858.857s.858-.384.858-.857c0-.474-.384-.858-.858-.858z">
+                                                    </path>
+                                                </defs>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <g
+                                                                        transform="translate(-2808 -4528) translate(2708 80) translate(52 4304) translate(48 144) translate(1.667 1.667)">
+                                                                        <use xlink:href="#4gg7gqe5ua"></use>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <div class="cp-top">
+                                            <h3>Miễn phí vận chuyển</h3>
+                                            <p>Đơn hàng từ 0đ</p>
+                                        </div>
+                                        <div class="cp-bottom">
+                                            <div class="cp-bottom-detail">
+                                                <p>Mã: <strong>IM7W2JDNGCQD</strong></p>
+                                                <p>HSD: 10/04/2024</p>
+                                            </div>
+                                            <div class="cp-bottom-btn">
+                                                <button class="cp-btn button" data-coupon="IM7W2JDNGCQD">Sao chép
+                                                    mã</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3 coupon-item">
+                                <div class="coupon-item__inner">
+                                    <div class="coupon-item__left">
+                                        <div class="cp-img boxlazy-img">
+                                            <span class="boxlazy-img__insert">
+                                                <img class=" ls-is-cached lazyloaded"
+                                                    data-src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_2_img.png?v=282"
+                                                    src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_2_img.png?v=282"
+                                                    alt="Giảm 10%">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-item__right">
+                                        <button type="button" class="cp-icon is-active" data-toggle="popover"
+                                            data-container="body" data-placement="bottom"
+                                            data-popover-content="#cp-tooltip-2" data-class="coupon-popover" title=""
+                                            data-original-title="Giảm 10% ">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <defs>
+                                                    <path id="4gg7gqe5ua"
+                                                        d="M8.333 0C3.738 0 0 3.738 0 8.333c0 4.595 3.738 8.334 8.333 8.334 4.595 0 8.334-3.739 8.334-8.334S12.928 0 8.333 0zm0 1.026c4.03 0 7.308 3.278 7.308 7.307 0 4.03-3.278 7.308-7.308 7.308-4.03 0-7.307-3.278-7.307-7.308 0-4.03 3.278-7.307 7.307-7.307zm.096 6.241c-.283 0-.512.23-.512.513v4.359c0 .283.23.513.512.513.284 0 .513-.23.513-.513V7.78c0-.283-.23-.513-.513-.513zm.037-3.114c-.474 0-.858.384-.858.858 0 .473.384.857.858.857s.858-.384.858-.857c0-.474-.384-.858-.858-.858z">
+                                                    </path>
+                                                </defs>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <g
+                                                                        transform="translate(-2808 -4528) translate(2708 80) translate(52 4304) translate(48 144) translate(1.667 1.667)">
+                                                                        <use xlink:href="#4gg7gqe5ua"></use>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <div class="cp-top">
+                                            <h3>Giảm 10%</h3>
+                                            <p>Tất cả sản phẩm của Mocato</p>
+                                        </div>
+                                        <div class="cp-bottom">
+                                            <div class="cp-bottom-detail">
+                                                <p>Mã: <strong>NP4TKOL1DYP7</strong></p>
+                                                <p>HSD: 05/05/2023</p>
+                                            </div>
+                                            <div class="cp-bottom-btn">
+                                                <button class="cp-btn button" data-coupon="NP4TKOL1DYP7">Sao chép
+                                                    mã</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3 coupon-item">
+                                <div class="coupon-item__inner">
+                                    <div class="coupon-item__left">
+                                        <div class="cp-img boxlazy-img">
+                                            <span class="boxlazy-img__insert">
+                                                <img class=" ls-is-cached lazyloaded"
+                                                    data-src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_3_img.png?v=282"
+                                                    src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_3_img.png?v=282"
+                                                    alt="Giảm 50.000đ">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-item__right">
+                                        <button type="button" class="cp-icon is-active" data-toggle="popover"
+                                            data-container="body" data-placement="bottom"
+                                            data-popover-content="#cp-tooltip-3" data-class="coupon-popover" title=""
+                                            data-original-title="Giảm 50.000đ ">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <defs>
+                                                    <path id="4gg7gqe5ua"
+                                                        d="M8.333 0C3.738 0 0 3.738 0 8.333c0 4.595 3.738 8.334 8.333 8.334 4.595 0 8.334-3.739 8.334-8.334S12.928 0 8.333 0zm0 1.026c4.03 0 7.308 3.278 7.308 7.307 0 4.03-3.278 7.308-7.308 7.308-4.03 0-7.307-3.278-7.307-7.308 0-4.03 3.278-7.307 7.307-7.307zm.096 6.241c-.283 0-.512.23-.512.513v4.359c0 .283.23.513.512.513.284 0 .513-.23.513-.513V7.78c0-.283-.23-.513-.513-.513zm.037-3.114c-.474 0-.858.384-.858.858 0 .473.384.857.858.857s.858-.384.858-.857c0-.474-.384-.858-.858-.858z">
+                                                    </path>
+                                                </defs>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <g
+                                                                        transform="translate(-2808 -4528) translate(2708 80) translate(52 4304) translate(48 144) translate(1.667 1.667)">
+                                                                        <use xlink:href="#4gg7gqe5ua"></use>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <div class="cp-top">
+                                            <h3>Giảm 50.000đ</h3>
+                                            <p>Chỉ áp dụng khi mua Gundam</p>
+                                        </div>
+                                        <div class="cp-bottom">
+                                            <div class="cp-bottom-detail">
+                                                <p>Mã: <strong>F38FX2TPA66G</strong></p>
+                                                <p>HSD: 10/05/2023</p>
+                                            </div>
+                                            <div class="cp-bottom-btn">
+                                                <button class="cp-btn button" data-coupon="F38FX2TPA66G">Sao chép
+                                                    mã</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3 coupon-item">
+                                <div class="coupon-item__inner">
+                                    <div class="coupon-item__left">
+                                        <div class="cp-img boxlazy-img">
+                                            <span class="boxlazy-img__insert">
+                                                <img class=" ls-is-cached lazyloaded"
+                                                    data-src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_4_img.png?v=282"
+                                                    src="//theme.hstatic.net/1000288298/1001020793/14/home_coupon_4_img.png?v=282"
+                                                    alt="Giảm ngay 20.000đ">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-item__right">
+                                        <button type="button" class="cp-icon" data-toggle="popover"
+                                            data-container="body" data-placement="bottom"
+                                            data-popover-content="#cp-tooltip-4" data-class="coupon-popover" title=""
+                                            data-original-title="Giảm ngay 20.000đ ">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <defs>
+                                                    <path id="4gg7gqe5ua"
+                                                        d="M8.333 0C3.738 0 0 3.738 0 8.333c0 4.595 3.738 8.334 8.333 8.334 4.595 0 8.334-3.739 8.334-8.334S12.928 0 8.333 0zm0 1.026c4.03 0 7.308 3.278 7.308 7.307 0 4.03-3.278 7.308-7.308 7.308-4.03 0-7.307-3.278-7.307-7.308 0-4.03 3.278-7.307 7.307-7.307zm.096 6.241c-.283 0-.512.23-.512.513v4.359c0 .283.23.513.512.513.284 0 .513-.23.513-.513V7.78c0-.283-.23-.513-.513-.513zm.037-3.114c-.474 0-.858.384-.858.858 0 .473.384.857.858.857s.858-.384.858-.857c0-.474-.384-.858-.858-.858z">
+                                                    </path>
+                                                </defs>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <g
+                                                                        transform="translate(-2808 -4528) translate(2708 80) translate(52 4304) translate(48 144) translate(1.667 1.667)">
+                                                                        <use xlink:href="#4gg7gqe5ua"></use>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <div class="cp-top">
+                                            <h3>Giảm ngay 20.000đ</h3>
+                                            <p>Đơn hàng từ 500.000đ</p>
+                                        </div>
+                                        <div class="cp-bottom">
+                                            <div class="cp-bottom-detail">
+                                                <p>Mã: <strong>5A5BWYQCC1LI</strong></p>
+                                                <p>HSD: 20/05/2023</p>
+                                            </div>
+                                            <div class="cp-bottom-btn">
+                                                <button class="cp-btn button" data-coupon="5A5BWYQCC1LI">Sao chép
+                                                    mã</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productDetail--box box-detail-description">
+                    <div class="product-description mg-top">
+                        <div class="box-title">
+                            <h2>Mô tả sản phẩm</h2>
+                        </div>
+                        <div class="description-content expandable-toggle opened">
+
+                            <div class="description-productdetail">
+                                Bảo hành 36 tháng<br>Tỉ lệ: 16:9<br>Kích thước: 21.5 inch<br>Tấm nền: VA<br>Độ phân giải
+                                : FHD (1920 × 1080)<br>Thời gian đáp ứng: 4ms GtG<br>Tốc độ làm mới : 75Hz<br>Hỗ trợ :
+                                vesa 100mmx100mm<br>Cổng kết nối: VGA × 1, HDMI 1.4 × 1, Audio 3.5mm<br>Phụ kiện: Cáp
+                                nguồn, cáp VGA, cáp HDMI
+                            </div>
+                            <div class="description-btn">
+                                <button class="expandable-content_toggle js_expandable_content d-none">
+                                    <span class="expandable-content_toggle-icon"></span>
+                                    <span class="expandable-content_toggle-text">Xem thêm nội dung</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
