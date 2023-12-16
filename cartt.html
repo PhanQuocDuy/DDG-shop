@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,18 +11,18 @@
     <!--CSS-->
     <link rel="stylesheet" href="./DDGSHOP/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./DDGSHOP/CSS/style-themes.scss.css">
-    <link rel="stylesheet" href="./DDGSHOP/CSS/style-customer.css">
     <!--JS-->
-    <script src="./DDGSHOP/JS/Test.js"></script>
-    <script src="./DDGSHOP/JS/bootstrap.bundle.min.js"></script>
     <script src="./DDGSHOP/JS/jquery-3.5.1.min.js"></script>
     <script src="./DDGSHOP/JS/scripts.js"></script>
-    <script src="./DDGSHOP/JS/Test.js"></script>
+    <script src="./DDGSHOP/JS/LinhTinhJS/api.jquery.js"></script>
+    <script src="./DDGSHOP/JS/LinhTinhJS/beacon.min.js"></script>
+    <script src="./DDGSHOP/JS/LinhTinhJS/cast_sender.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
-    <!--Header-->
+    <!--header-->
     <div id="templateHeader">
         <div class="mainHeader--height" style="min-height: 202.55px;">
             <header class="mainHeader mainHeader_temp03" id="site-header">
@@ -188,13 +189,26 @@
                                                                         <label for="login-customer[password]"
                                                                             class="form__floating-label">Mật
                                                                             khẩu</label>
+
+                                                                        <div class="sitebox-recaptcha">
+                                                                            This site is protected by reCAPTCHA and the
+                                                                            Google
+                                                                            <a href="https://policies.google.com/privacy"
+                                                                                target="_blank" rel="noreferrer">Privacy
+                                                                                Policy</a>
+                                                                            and <a
+                                                                                href="https://policies.google.com/terms"
+                                                                                target="_blank" rel="noreferrer">Terms
+                                                                                of Service</a> apply.
+                                                                        </div>
                                                                     </div>
                                                                     <button type="submit"
                                                                         class="form__submit button dark"
                                                                         id="form_submit-login">Đăng nhập</button>
 
                                                                     <input id="7a95ae40e8b9499f93411f172743d7ca"
-                                                                        name="g-recaptcha-response" type="hidden">
+                                                                        name="g-recaptcha-response"
+                                                                        type="hidden">
                                                                 </form>
 
                                                                 <div class="site_account_secondary-action">
@@ -222,21 +236,13 @@
                                                                     <input name="form_type" type="hidden"
                                                                         value="recover_customer_password">
                                                                     <input name="utf8" type="hidden" value="✓">
-                                                                    <div
-                                                                        class="form__input-wrapper form__input-wrapper--labelled">
-                                                                        <input type="email"
-                                                                            id="recover-customer[recover_email]"
-                                                                            class="form__field form__field--text"
-                                                                            name="email" required="required">
-                                                                        <label for="recover-customer[recover_email]"
-                                                                            class="form__floating-label">Email</label>
-                                                                    </div>
                                                                     <button type="submit"
                                                                         class="form__submit button dark"
                                                                         id="form_submit-recover">Khôi phục</button>
 
                                                                     <input id="4884ec76fb7442abae1dbc4e728fca2f"
-                                                                        name="g-recaptcha-response" type="hidden">
+                                                                        name="g-recaptcha-response"
+                                                                        type="hidden">
                                                                 </form>
                                                                 <div class="site_account_secondary-action">
                                                                     <p>Bạn đã nhớ mật khẩu?
@@ -249,8 +255,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="header-action-item header-action_cart">
                                         <div class="header-action_text">
@@ -276,23 +284,22 @@
                                                         </svg>
                                                     </span>
                                                     <span class="count-holder">
-                                                        <span class="count">0</span>
+                                                        <span class="count">1</span>
                                                     </span>
                                                 </span>
                                                 <span class="box-text">
                                                     <span class="txtbl">Giỏ hàng</span>
                                                 </span>
                                             </button>
-                                            <span class="box-triangle">
+                                            <!-- <span class="box-triangle">
                                                 <svg viewBox="0 0 20 9" role="presentation">
                                                     <path
                                                         d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
                                                         fill="#ffffff"></path>
                                                 </svg>
-                                            </span>
+                                            </span> -->
                                         </div>
-
-                                        <div class="header-action_dropdown">
+                                        <!-- <div class="header-action_dropdown">
                                             <div class="header-dropdown_content">
                                                 <div class="sitenav-content sitenav-cart">
                                                     <p class="boxtitle">Giỏ hàng</p>
@@ -394,7 +401,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -404,302 +411,414 @@
             </header>
         </div>
     </div>
-    <section class="productDetail-information productDetail_style__01">
-        <div class="container container-pd0">
-            <div class="productDetail--main">
-                <div class="productDetail--gallery">
-                    <div class="product-container-gallery">
-                        <div class="wrapbox-gallery">
-                            <div class="wrapbox-image">
-                                <div class="productGallery_slider">
-                                    <ul class="productList-slider productCarousel-slider owl-carousel owl-loaded owl-drag"
-                                        id="productCarousel-slider">
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage"
-                                                style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1324px;">
-                                                <div class="owl-item" style="width: 331px;">
-                                                    <li class="product-gallery"
-                                                        data-image="//product.hstatic.net/1000288298/product/22b3hm_ftr_4741ed03f8a748c79c767adb894fb0a2_master.png">
-                                                        <a class="product-gallery__item" data-fancybox="gallery"
-                                                            href="//product.hstatic.net/1000288298/product/22b3hm_ftr_4741ed03f8a748c79c767adb894fb0a2_master.png">
-                                                            <img src="//product.hstatic.net/1000288298/product/22b3hm_ftr_4741ed03f8a748c79c767adb894fb0a2_master.png"
-                                                                alt=" Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz) ">
-                                                        </a>
-                                                    </li>
+    <!--Main-->
+    <main class="wrapperMain_content">	
+
+
+
+        <div id="layout-cart">
+            <div class="breadcrumb-shop"><div class="container">
+            <div class="breadcrumb-list  ">
+                <ol class="breadcrumb breadcrumb-arrows" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a href="/" target="_self" itemprop="item"><span itemprop="name">Trang chủ</span></a>
+                        <meta itemprop="position" content="1">		
+                    </li>
+                    
+                    <li class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <span itemprop="item" content="https://ttgshop.vn/cart"><strong itemprop="name">Giỏ hàng (1)</strong></span>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    
+                </ol>
+            </div>
+        </div></div>
+            <div class="wrapper-mainCart">
+                <div class="content-bodyCart">
+                    <div class="container">
+                        <div class="row">			
+                            <div class="col-lg-8 col-md-12 col-12 contentCart-detail">
+                                <div class="mainCart-detail">
+                                    <h1 class="heading-cart">Giỏ hàng của bạn</h1>
+                                    
+                                    <div class="list-pageform-cart">
+                                        <form action="/cart" method="post" id="cartformpage">
+                                            <div class="cart-row">
+                                                <p class="title-number-cart">
+                                                    Bạn đang có <strong class="count-cart">1 sản phẩm</strong> trong giỏ hàng
+                                                </p>
+                                                <div class="table-cart">
+                                                    <div class="media-line-item line-item" data-variant-id="1109329098" data-product-id="1048346677">
+                                                        <div class="media-left">
+                                                            <div class="item-img">
+                                                                <a href="/products/man-hinh-aoc-22b3hm-74-va-fhd-75hz">
+                                                                    <img src="  //product.hstatic.net/1000288298/product/22b3hm_f_671937c483c843e8a604e3cfd836417e_medium.png " alt="Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz)">
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-remove">
+                                                                <a href="javascript:void(0)" onclick="HRT.Cart.removeItemCart(this,'/cart/change?line=1&amp;quantity=0')" class="cart">Xóa</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-right">
+                                                            <div class="item-info">
+                                                                <h3 class="item--title"><a href="/products/man-hinh-aoc-22b3hm-74-va-fhd-75hz">Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz)</a></h3>
+                                                                
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <p>
+                                                                    <span>1,790,000₫</span>
+                                                                    
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-total">
+                                                            <div class="item-total-price">
+                                                                <div class="price">
+                                                                    <span class="line-item-total">1,790,000₫</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-qty">
+                                                                <div class="qty quantity-partent qty-click clearfix">
+                                                                    <button type="button" class="qtyminus qty-btn">
+                                                                        <svg width="18" height="18" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <rect height="1" width="18" y="9" x="1"></rect></svg>
+                                                                    </button>
+                                                                    <input type="text" size="4" name="updates[]" min="1" oriprice="179000000" line="1" productid="1048346677" variantid="1109329098" id="updates_1109329098" data-price="179000000" value="1" readonly="" class="tc line-item-qty item-quantity">
+                                                                    <button type="button" class="qtyplus qty-btn">
+                                                                        <svg width="18" height="18" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <rect x="9" y="1" width="1" height="17"></rect> <rect x="1" y="9" width="17" height="1"></rect></svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="owl-nav"><button type="button" role="presentation"
-                                                class="owl-prev disabled"><span
-                                                    aria-label="Previous">‹</span></button><button type="button"
-                                                role="presentation" class="owl-next"><span
-                                                    aria-label="Next">›</span></button></div>
-                                        <div class="owl-dots"><button role="button"
-                                                class="owl-dot active"><span></span></button><button role="button"
-                                                class="owl-dot"><span></span></button><button role="button"
-                                                class="owl-dot"><span></span></button><button role="button"
-                                                class="owl-dot"><span></span></button></div>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="productDetail--content">
-                    <div class="wrapbox-inner">
-                        <div class="wrapbox-detail">
-                            <div class="product-heading">
-                                <h1>Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz)</h1>
-
-                                <span class="pro-soldold">Tình trạng:
-
-                                    <strong>Còn hàng</strong>
-
-                                </span>
-                                <span class="pro-vendor">Thương hiệu: <strong><a title="Show vendor"
-                                            href="/collections/vendors?q=aoc">AOC</a></strong></span>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="col-lg-8 col-md-12 col-12 p-0 wrapbox-left">
-                                <div class="wrapbox-detail">
-                                    <div class="product-price" id="price-preview">
-                                        <span class="pro-title">Giá: </span>
-                                        <span class="pro-price">1,790,000₫</span>
-
-                                    </div>
-                                    <div class="product-variants" style="display:none">
-                                        <form id="add-item-form" action="/cart/add" method="post"
-                                            class="variants clearfix">
-                                            <div class="select clearfix" style="display:none">
-                                                <select id="product-select" name="id" style="display:none;">
-
-                                                    <option value="1109329098">Default Title - 1,790,000₫</option>
-
-                                                </select>
+                                            <div class="cart-row">
+                                                <div class="order-noted-block">	
+                                                    <div class="container-pd15">				
+                                                        <div class="checkout-buttons clearfix">
+                                                            <label for="note" class="note-label">Ghi chú đơn hàng</label>
+                                                            <textarea class="form-control" id="note" name="note" rows="5"></textarea>
+                                                        </div>	
+                                                        <button type="submit" id="checkout" class="btn-checkout button d-none " name="checkout" value="">Thanh toán</button>
+                                                    </div> 
+                                                </div>
                                             </div>
-                                            <div class="select-swatch clearfix">
-                                                <div id="variant-swatch-0" class="swatch clearfix" data-option="option1"
-                                                    data-option-index="0">
-                                                    <div class="title-swap header">Tiêu đề: </div>
-                                                    <div class="select-swap">
-                                                        <div data-value="Default Title"
-                                                            class="n-sd swatch-element default-title  ">
-                                                            <input class="variant-0" id="swatch-0-default-title"
-                                                                type="radio" name="option1" value="Default Title"
-                                                                data-vhandle="default-title" checked="">
-
-                                                            <label for="swatch-0-default-title">
-                                                                <span>Default Title</span>
-                                                            </label>
-
+                                            <div class="cart-row">
+                                                <div class="order-invoice-block">	
+                                                    <div class="checkbox">
+                                                        <input type="hidden" name="attributes[invoice]" id="re-checkbox-bill" value="no">
+                                                        <input type="checkbox" id="checkbox-bill" value="yes" name="regular-checkbox" class="regular-checkbox">
+                                                        <label for="checkbox-bill" class="box"></label>
+                                                        <label for="checkbox-bill" class="title">Xuất hoá đơn cho đơn hàng</label>
+                                                    </div>
+        
+        
+                                                    <div class="bill-field">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control val-f check_change" name="attributes[bill_order_company]" value="" placeholder="Tên công ty...">
+                                                        </div>	
+                                                        <div class="form-group">
+                                                            <input type="number" pattern=".{10,}" onkeydown="return HRT.All.FilterInput(event)" onpaste="HRT.All.handlePaste(event)" class="form-control val-f val-n check_change" name="attributes[bill_order_tax_code]" value="" placeholder="Mã số thuế...">
                                                         </div>
-
-
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control val-f val-mail check_change" name="attributes[bill_email]" value="" placeholder="Email...">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control val-f check_change" name="attributes[bill_order_address]" value="" placeholder="Địa chỉ công ty...">
+                                                        </div>
+                                                        <div class="form-btn">
+                                                            <a href="javascript:void();" class="button btn-save">Lưu thông tin</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
-
-                                    <div class="product-actions">
-                                        <div class="select-actions d-none d-lg-block clearfix">
-                                            <div class="quantity-area">
-                                                <div class="quantity-title">Số lượng: </div>
-                                                <button type="button" onclick="HRT.All.minusQuantity()" class="qty-btn">
-                                                    <svg focusable="false" class="icon icon--minus " viewBox="0 0 10 2"
-                                                        role="presentation">
-                                                        <path d="M10 0v2H0V0z"></path>
-                                                    </svg>
-                                                </button>
-                                                <input type="text" id="quantity" name="quantity" value="1" min="1"
-                                                    class="quantity-input">
-                                                <button type="button" onclick="HRT.All.plusQuantity()" class="qty-btn">
-                                                    <svg focusable="false" class="icon icon--plus " viewBox="0 0 10 10"
-                                                        role="presentation">
-                                                        <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z"></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <div class="addcart-area">
-                                                <button type="button" id="add-to-cart"
-                                                    class=" add-to-cartProduct button dark btn-addtocart addtocart-modal"
-                                                    name="add">
-                                                    Thêm vào giỏ
-                                                </button>
-
-                                                <button type="button" id="buy-now"
-                                                    class="  button dark btn-buynow btnred addtocart-modal" name="add">
-                                                    Mua ngay
-                                                </button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-toshare">
-                                        <span>Chia sẻ: </span>
-                                        <a href="//www.facebook.com/sharer/sharer.php?u=https://ttgshop.vn/products/man-hinh-aoc-22b3hm-74-va-fhd-75hz"
-                                            target="_blank" class="share-facebook">
-                                            <i class="fa fa-facebook"></i>
-                                            <span class="ico-tooltip">Facebook</span>
-                                        </a>
-                                        <a href="https://m.me/108520260558644" target="_blank" rel="noreferrer"
-                                            aria-label="messenger" class="share-messenger">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 28 28">
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <g>
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <g>
-                                                                        <g
-                                                                            transform="translate(-293.000000, -708.000000) translate(180.000000, 144.000000) translate(16.000000, 16.000000) translate(0.000000, 548.000000) translate(61.000000, 0.000000) translate(36.000000, 0.000000)">
-                                                                            <circle cx="14" cy="14" r="14"
-                                                                                fill="#0084FF"></circle>
-                                                                            <path fill="#FFF"
-                                                                                d="M14.848 15.928l-1.771-1.9-3.457 1.9 3.802-4.061 1.815 1.9 3.414-1.9-3.803 4.061zM14.157 7.2c-3.842 0-6.957 2.902-6.957 6.481 0 2.04 1.012 3.86 2.593 5.048V21.2l2.368-1.308c.632.176 1.302.271 1.996.271 3.842 0 6.957-2.902 6.957-6.482S17.999 7.2 14.157 7.2z">
-                                                                            </path>
-                                                                        </g>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <span class="ico-tooltip">Messenger</span>
-                                        </a>
-                                        <a href="https://twitter.com/intent/tweet?text=optional%20promo%20text%20https://ttgshop.vn/products/man-hinh-aoc-22b3hm-74-va-fhd-75hz"
-                                            target="_blank" class="share-twitter">
-                                            <i class="fa fa-twitter"></i>
-                                            <span class="ico-tooltip">Twitter</span>
-                                        </a>
-                                        <a href="//pinterest.com/pin/create/link/?url=https://ttgshop.vn&amp;media=https://product.hstatic.net/1000288298/product/22b3hm_f_671937c483c843e8a604e3cfd836417e.png&amp;description=Màn hình AOC 22B3HM/74 (VA - FHD - 75Hz)"
-                                            target="_blank" class="share-pinterest">
-                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                                            <span class="ico-tooltip">Pinterest</span>
-                                        </a>
-                                        <a class="share-link" onclick="HRT.Product.copyLinkProduct()">
-                                            <i class="fa fa-link" aria-hidden="true"></i>
-                                            <span class="ico-tooltip">Sao chép url</span>
-                                        </a>
-                                    </div>
+                                            
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-12 col-12 p-0 wrapbox-right">
-                                <div class="wrapbox-detail">
-                                    <div class="d-flex flex-wrap product-deliverly">
-                                        <div class="col-lg-12 col-md-6 col-12 deliverly-inner">
-                                            <div class="title-deliverly">
-                                                <span>Chính sách bán hàng</span>
+                            <div class="col-lg-4 col-md-12 col-12 sidebarCart-sticky">
+                                <div class="wrap-order-summary">			
+                                    <div class="order-summary-block">
+                                        <h2 class="summary-title">Thông tin đơn hàng</h2>
+                                        
+                                        <div class="summary-time summary-picktime">
+                                            <div class="summary-time__row">
+                                                <div class="boxtime-title">												
+                                                    <p class="txt-title">Thời gian giao hàng</p>	
+                                                    <p class="txt-time ">
+                                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 
+                                                        <span>Chọn thời gian</span>
+                                                    </p>	
+                                                </div>							
+                                                <div class="boxtime-radio" id="picktime_radio" data-time-start="" data-time-end="">		
+                                                    <div class="radio-item">
+                                                        <input class="input-radio" type="radio" name="timeRadios" id="timeRadios-1" value="timeNow">
+                                                        <label class="label-radio" for="timeRadios-1">Giao khi có hàng</label>
+                                                    </div>	
+                                                    <div class="radio-item">
+                                                        <input class="input-radio" type="radio" name="timeRadios" id="timeRadios-2" value="timeDate">
+                                                        <label class="label-radio" for="timeRadios-2">Chọn thời gian</label>
+                                                    </div>										
+                                                </div>												
                                             </div>
-                                            <div class="infoList-deliverly">
-                                                <div class="deliverly-item">
-                                                    <span>
-                                                        <img class=" ls-is-cached lazyloaded"
-                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_1_ico.png?v=282"
-                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_1_ico.png?v=282"
-                                                            alt="Cam kết 100% chính hãng">
-                                                    </span>
-                                                    Cam kết 100% chính hãng
-                                                </div>
-                                                <div class="deliverly-item">
-                                                    <span>
-                                                        <img class=" ls-is-cached lazyloaded"
-                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_3_ico.png?v=282"
-                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_3_ico.png?v=282"
-                                                            alt="Hỗ trợ 24/7">
-                                                    </span>
-                                                    Hỗ trợ 24/7
+                                            <div class="summary-time__row picktime_selecter">
+                                                <div class="boxtime-select">
+                                                    <div class="select-choose">
+                                                        <div class="select-box date-option">
+                                                            <label>Ngày giao</label>
+                                                            <div class="select-option">
+                                                                <select id="date_shipping">
+                                                                    <option value="17/12/2023">Hôm nay</option>
+                                                                <option value="18/12/2023">18/12/2023</option><option value="19/12/2023">19/12/2023</option></select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="select-box time-option">
+                                                            <label>Thời gian giao</label>
+                                                            <div class="select-option">
+                                                                <select id="time_shipping">														
+                                                                                                                            
+        
+        
+        
+                                                                    
+                                                                    <option data-min="08:00:00" data-max="09:00:00" value="08:00 - 09:00">08:00 - 09:00</option>
+                                                                                                                            
+        
+        
+        
+                                                                    
+                                                                    <option data-min="09:00:00" data-max="10:00:00" value="09:00 - 10:00">09:00 - 10:00</option>
+                                                                                                                            
+        
+        
+        
+                                                                    
+                                                                    <option data-min="10:00:00" data-max="11:00:00" value="10:00 - 11:00">10:00 - 11:00</option>
+                                                                                                                            
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                                                                                                                                        
+        
+        
+        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="select-button">
+                                                        <button class="btn-accepttime" id="btn-cart-accepttime">Xác nhận thời gian</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-md-6 col-12 deliverly-inner">
-                                            <div class="title-deliverly">
-                                                <span>Thông tin thêm</span>
-                                            </div>
-                                            <div class="infoList-deliverly">
-                                                <div class="deliverly-item">
-                                                    <span>
-                                                        <img class=" ls-is-cached lazyloaded"
-                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_4_ico.png?v=282"
-                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_4_ico.png?v=282"
-                                                            alt="Hoàn tiền
-111%
-nếu hàng giả">
-                                                    </span>
-                                                    Hoàn tiền
-                                                    111%
-                                                    nếu hàng giả
-                                                </div>
-                                                <div class="deliverly-item">
-                                                    <span>
-                                                        <img class=" ls-is-cached lazyloaded"
-                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_5_ico.png?v=282"
-                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_5_ico.png?v=282"
-                                                            alt="Mở hộp
-kiểm tra
-nhận hàng">
-                                                    </span>
-                                                    Mở hộp
-                                                    kiểm tra
-                                                    nhận hàng
-                                                </div>
-                                                <div class="deliverly-item">
-                                                    <span>
-                                                        <img class=" ls-is-cached lazyloaded"
-                                                            data-src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_6_ico.png?v=282"
-                                                            src="//theme.hstatic.net/1000288298/1001020793/14/product_deliverly_6_ico.png?v=282"
-                                                            alt="Đổi trả trong
-7 ngày">
-                                                    </span>
-                                                    Đổi trả trong
-                                                    7 ngày
-                                                </div>
+                                        
+                                        <div class="summary-total">
+                                            <p>Tổng tiền: <span>1,790,000₫</span></p>
+                                        </div>
+                                        <div class="summary-action">					
+        <p>Phí vận chuyển sẽ được tính ở trang thanh toán.</p><p>Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</p><p>Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</p>									<div class="summary-alert alert alert-danger ">
+                                                Giỏ hàng của bạn hiện chưa đạt mức tối thiểu để thanh toán.
                                             </div>
                                         </div>
+                                        <div class="summary-button">	
+                                            <a id="btnCart-checkout" class="checkout-btn btnred " data-price-min="40000" data-price-total="1790000" href="#">THANH TOÁN </a>
+                                        </div>
                                     </div>
-                                    <div class="product-banner">
-                                        <a href="/collections/all">
-                                            <img src="//theme.hstatic.net/1000288298/1001020793/14/product_banner.jpg?v=282"
-                                                alt="product banner">
-                                        </a>
+                                    <div class="order-summary-block order-summary-notify ">
+                                        <div class="summary-warning alert-order">						
+                                            <p class="textmr"><strong>Chính sách mua hàng</strong>:</p>
+                                            <p>Hiện chúng tôi chỉ áp dụng thanh toán với đơn hàng có giá trị tối thiểu <strong>40.000₫ </strong> trở lên.</p>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-
-               
-                <div class="productDetail--box box-detail-description">
-                    <div class="product-description mg-top">
-                        <div class="box-title">
-                            <h2>Mô tả sản phẩm</h2>
-                        </div>
-                        <div class="description-content expandable-toggle opened">
-
-                            <div class="description-productdetail">
-                                Bảo hành 36 tháng<br>Tỉ lệ: 16:9<br>Kích thước: 21.5 inch<br>Tấm nền: VA<br>Độ phân giải
-                                : FHD (1920 × 1080)<br>Thời gian đáp ứng: 4ms GtG<br>Tốc độ làm mới : 75Hz<br>Hỗ trợ :
-                                vesa 100mmx100mm<br>Cổng kết nối: VGA × 1, HDMI 1.4 × 1, Audio 3.5mm<br>Phụ kiện: Cáp
-                                nguồn, cáp VGA, cáp HDMI
+            </div>
+        </div> 
+        <div class="d-none"></div>
+        <div class="modal-coupon--backdrop"></div>
+        
+        <script>	
+                function delayTime2 (func, wait) {
+                    return function() {
+                        var that = this,
+                                args = [].slice(arguments);
+                        clearTimeout(func._throttleTimeout);
+                        func._throttleTimeout = setTimeout(function() {
+                            func.apply(that, args);
+                        }, wait);
+                    };
+                }
+                 $(document).on('click', '.qty-click .qtyplus', function(e){
+                     e.preventDefault();
+                     var input = $(this).parent('.quantity-partent').find('input');
+                     var currentVal = parseInt(input.val());
+                     if (!isNaN(currentVal)) {
+                         input.val(currentVal + 1);
+                     } else {
+                         input.val(1);
+                     }
+                 });
+                 $(document).on('click', ".qty-click .qtyminus", function(e){
+                     e.preventDefault();
+                     var input = $(this).parent('.quantity-partent').find('input');
+                     var currentVal = parseInt(input.val());
+                     if (!isNaN(currentVal) && currentVal > 1) {
+                         input.val(currentVal - 1);
+                     } else {
+                         input.val(1);
+                     }
+                 });	 
+                     $(document).on('click', '.qty-click .qtyplus,.qty-click .qtyminus', delayTime2(function(){
+                         comboApp.comboUpdateCart();
+                     },500));
+                     $(document).on('change', '.qty-click .item-quantity', delayTime2(function() {				
+                         comboApp.comboUpdateCart();
+                     }, 500));
+        </script>
+        
+        
+        
+        
+                </main>
+    <!--Footer -->
+    <footer class="mainFooter">
+        <div class="footer-center">
+            <div class="footer-expand-collapsed ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 col-12 widget-footer">
+                            <h4 class="title-footer">Về DDG</h4>
+                            <div class="content-footer block-collapse row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <p>Trang thương mại luôn tìm kiếm những sản
+                                        phẩm vì game thủ.</p>
+                                    <ul class="footerNav-social">
+                                        <li><a href="https://www.facebook.com/dattoon.nauhov/" target="_blank" rel=""
+                                                title="Facebook" aria-label="Facebook"><i
+                                                    class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="https://www.instagram.com/nauhov_dattoon/" target="_blank" rel=""
+                                                title="Instagram" aria-label="Instagram"><i
+                                                    class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCORsk_Hsc_FBjJxKRuwBiig"
+                                                target="_blank" rel="" title="Youtube" aria-label="Youtube"><i
+                                                    class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="description-btn">
-                                <button class="expandable-content_toggle js_expandable_content d-none">
-                                    <span class="expandable-content_toggle-icon"></span>
-                                    <span class="expandable-content_toggle-text">Xem thêm nội dung</span>
-                                </button>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-12 widget-footer">
+                            <h4 class="title-footer">Thông tin liên hệ</h4>
+                            <div class="content-footer block-collapse row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="address-footer">
+                                        <ul>
+                                            <li class="contact-1">
+                                                CS1: Thiện Trung - Cái Bè - Tiền Giang<br>
+                                                CS2: Mỹ Thọ - Cao Lãnh - Đồng Tháp <br>
+                                            </li>
+                                            <li class="contact-2"><i class="ti-mobile" aria-hidden="true"></i>
+                                                0385942009 - 0764788402</li>
+                                            <li class="contact-4"><i class="ti-email" aria-hidden="true"></i>
+                                                duy2110454@student.nctu.edu.vn</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-12 widget-footer">
+                            <h4 class="title-footer">Hỗ trợ khách hàng</h4>
+                            <div class="content-footer block-collapse">
+                                <ul class="footerNav-link">
+                                    <li class="item">
+                                        <a href="./bank.html" title="Tài Khoản Ngân Hàng">Tài Khoản Ngân Hàng</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Copyright © 2023 <a href="./DDG.html"> DDGShop - Phụ kiện Game Thủ |Tư vấn Build PC| giá rẻ</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="swal-overlay swal-overlay--show-modal" tabindex="-1">
+        <div class="swal-modal swal-cart-remove"><div class="swal-text">Bạn chắc chắn muốn bỏ sản phẩm này ra khỏi giỏ hàng?</div><div class="swal-footer"><div class="swal-button-container">
+      
+          <button class="swal-button swal-button--cancel">Hủy</button>
+      
+          <div class="swal-button__loader">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      
+        </div><div class="swal-button-container">
+      
+          <button class="swal-button swal-button--confirm">Đồng ý</button>
+      
+          <div class="swal-button__loader">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      
+        </div></div></div></div>
+
+
 </body>
 
 </html>
+
+
