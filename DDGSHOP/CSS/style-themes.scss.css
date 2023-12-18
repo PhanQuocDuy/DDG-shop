@@ -2811,6 +2811,19 @@ img.lazyload:not([src]) {
         animation-iteration-count: infinite;
         opacity: 0;
         animation-delay: 1.1s; }
+      .swal-overlay {
+        display: none;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 100; /* Đặt z-index cao để hộp thoại hiển thị trên tất cả các phần tử khác */
+          background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền bằng cách sử dụng màu nền bán trong suốt */
+      }
+      
     .mainHeader.hSticky-nav .header-wrap-logo h1, .mainHeader.hSticky-nav .header-wrap-logo a {
       font-size: 25px; }
     .mainHeader.hSticky-nav .header-wrap-logo a img {

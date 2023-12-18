@@ -328,8 +328,8 @@
                                                                                 </svg></a></div>
                                                                     </td>
                                                                 </tr> -->
-                                                                
-                                                               
+
+
                                                             </table>
                                                         </div>
                                                         <div class="cart-view-line"></div>
@@ -340,7 +340,8 @@
                                                                         <td class="mnc-total text-left">TỔNG TIỀN:</td>
                                                                         <td
                                                                             class="mnc-total text-right total-view-cart">
-                                                                            <span>0</span> <span>đ</span> </td>
+                                                                            <span>0</span> <span>đ</span>
+                                                                        </td>
                                                                     </tr>
                                                                     <tr class="mini-cart__button">
                                                                         <td colspan="2"><a href="./cart.html"
@@ -419,7 +420,7 @@
                                                             </div>
                                                             <div class="item-remove">
                                                                 <a href="javascript:void(0)"
-                                                                    onclick="HRT.Cart.removeItemCart(this,'/cart/change?line=1&amp;quantity=0')"
+                                                                    onclick="confirmDelete(this,'/cart/change?line=1&amp;quantity=0')"
                                                                     class="cart">Xóa</a>
                                                             </div>
                                                         </div>
@@ -475,20 +476,26 @@
 
                                                 </div>
                                                 <div class="table-cart">
-                                                    <div class="media-line-item line-item" data-variant-id="1104916274" data-product-id="1046530070">
+                                                    <div class="media-line-item line-item" data-variant-id="1104916274"
+                                                        data-product-id="1046530070">
                                                         <div class="media-left">
                                                             <div class="item-img">
-                                                                <a href="/products/man-hinh-asus-proart-pa248qv-24inch-wuxga-ips-75hz-5ms-300nits-hdmi-dp-dsub-audio-usb">
-                                                                    <img src="  //product.hstatic.net/1000288298/product/1_2ae2660ed4364847b5d04b90fd257aab_medium.jpg " alt="Màn hình Asus ProArt PA248QV (24inch/WUXGA/IPS/75Hz/5ms/300nits/HDMI+DP+DSub+Audio+USB)">
+                                                                <a
+                                                                    href="/products/man-hinh-asus-proart-pa248qv-24inch-wuxga-ips-75hz-5ms-300nits-hdmi-dp-dsub-audio-usb">
+                                                                    <img src="  //product.hstatic.net/1000288298/product/1_2ae2660ed4364847b5d04b90fd257aab_medium.jpg "
+                                                                        alt="Màn hình Asus ProArt PA248QV (24inch/WUXGA/IPS/75Hz/5ms/300nits/HDMI+DP+DSub+Audio+USB)">
                                                                 </a>
                                                             </div>
                                                             <div class="item-remove">
-                                                                <a href="javascript:void(0)" onclick="HRT.Cart.removeItemCart(this,'/cart/change?line=1&amp;quantity=0')" class="cart">Xóa</a>
+                                                                <a href="javascript:void(0)"
+                                                                    onclick="confirmDelete(this,'/cart/change?line=1&amp;quantity=0')"
+                                                                    class="cart">Xóa</a>
                                                             </div>
                                                         </div>
                                                         <div class="media-right">
                                                             <div class="item-info">
-                                                                <h3 class="item--title"><a href="/products/man-hinh-asus-proart-pa248qv-24inch-wuxga-ips-75hz-5ms-300nits-hdmi-dp-dsub-audio-usb">Màn
+                                                                <h3 class="item--title"><a
+                                                                        href="/products/man-hinh-asus-proart-pa248qv-24inch-wuxga-ips-75hz-5ms-300nits-hdmi-dp-dsub-audio-usb">Màn
                                                                         hình Asus ProArt PA248QV
                                                                         (24inch/WUXGA/IPS/75Hz/5ms/300nits/HDMI+DP+DSub+Audio+USB)</a>
                                                                 </h3>
@@ -510,12 +517,18 @@
                                                             <div class="item-qty">
                                                                 <div class="qty quantity-partent qty-click clearfix">
                                                                     <button type="button" class="qtyminus qty-btn">
-                                                                        <svg width="18" height="18" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                        <svg width="18" height="18" viewBox="0 0 20 20"
+                                                                            xmlns="http://www.w3.org/2000/svg">
                                                                             <rect height="1" width="18" y="9" x="1">
                                                                             </rect>
                                                                         </svg>
                                                                     </button>
-                                                                    <input type="text" size="4" name="updates[]" min="1" oriprice="589900000" line="1" productid="1046530070" variantid="1104916274" id="updates_1104916274" data-price="589900000" value="1" readonly="" class="tc line-item-qty item-quantity">
+                                                                    <input type="text" size="4" name="updates[]" min="1"
+                                                                        oriprice="589900000" line="1"
+                                                                        productid="1046530070" variantid="1104916274"
+                                                                        id="updates_1104916274" data-price="589900000"
+                                                                        value="1" readonly=""
+                                                                        class="tc line-item-qty item-quantity">
                                                                     <button type="button" class="qtyplus qty-btn">
                                                                         <svg width="18" height="18" viewBox="0 0 20 20">
                                                                             <rect x="9" y="1" width="1" height="17">
@@ -687,7 +700,8 @@
                                         <div class="summary-warning alert-order">
                                             <p class="textmr"><strong>Chính sách mua hàng</strong>:</p>
                                             <p>Hiện chúng tôi chỉ áp dụng thanh toán với đơn hàng có giá trị tối thiểu
-                                                <strong>40.000₫ </strong> trở lên.</p>
+                                                <strong>40.000₫ </strong> trở lên.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -812,30 +826,36 @@
             </div>
         </div>
     </footer>
-
     <div class="swal-overlay swal-overlay--show-modal" tabindex="-1">
-        <div class="swal-modal swal-cart-remove"><div class="swal-text">Bạn chắc chắn muốn bỏ sản phẩm này ra khỏi giỏ hàng?</div><div class="swal-footer"><div class="swal-button-container">
-      
-          <button class="swal-button swal-button--cancel">Hủy</button>
-      
-          <div class="swal-button__loader">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-      
-        </div><div class="swal-button-container">
-      
-          <button class="swal-button swal-button--confirm">Đồng ý</button>
-      
-          <div class="swal-button__loader">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-      
-        </div></div></div></div>
+        <div class="swal-modal swal-cart-remove">
+            <div class="swal-text">Bạn chắc chắn muốn bỏ sản phẩm này ra khỏi giỏ hàng?</div>
+            <div class="swal-footer">
+                <div class="swal-button-container">
 
+                    <button class="swal-button swal-button--cancel">Hủy</button>
+
+                    <div class="swal-button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+                <div class="swal-button-container">
+
+                    <button class="swal-button swal-button--confirm">Đồng ý</button>
+
+                    <div class="swal-button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./DDGSHOP/JS/button.js"></script>
 
 </body>
 
