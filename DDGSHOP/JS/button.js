@@ -129,3 +129,63 @@ confirmButton.addEventListener('click', function() {
     swalOverlay.style.display = 'none';
 });
 
+var elements = document.getElementsByClassName('line-item-total');
+var total = 0;
+for(var i = 0; i < elements.length; i++) {
+    var value = elements[i].innerText;
+    // Remove the currency symbol and convert to a number
+    value = Number(value.replace(/[^0-9.-]+/g,""));
+    total += value;
+}
+
+// Format the total with comma separators
+var formattedTotal = total.toLocaleString('vi-VN');
+
+// Update the total in the summary-total class
+var summaryTotal = document.querySelector('.summary-total p span');
+summaryTotal.innerText = formattedTotal + '₫';
+
+// Listen for clicks on the qtyminus button
+document.querySelector('.qtyminus').addEventListener('click', function() {
+    // Get the current quantity and price per item
+    var quantity = Number(document.querySelector('.item-quantity').value);
+    var pricePerItem = Number(document.querySelector('.line-item-total').innerText.replace(/[^0-9.-]+/g,""));
+
+    // Decrease the quantity by 1
+    quantity -= 1;
+
+    // Update the quantity in the input field
+    document.querySelector('.item-quantity').value = quantity;
+
+    // Calculate the new total
+    var total = quantity * pricePerItem;
+
+    // Format the total with comma separators
+    var formattedTotal = total.toLocaleString('vi-VN');
+
+    // Update the total in the summary-total class
+    document.querySelector('.summary-total p span').innerText = formattedTotal + '₫';
+});
+// Listen for clicks on the qtyplus button
+document.querySelector('.qtyplus').addEventListener('click', function() {
+    // Get the current quantity and price per item
+    var quantity = Number(document.querySelector('.item-quantity').value);
+    var pricePerItem = Number(document.querySelector('.line-item-total').innerText.replace(/[^0-9.-]+/g,""));
+
+    // Increase the quantity by 1
+    quantity += 1;
+
+    // Update the quantity in the input field
+    document.querySelector('.item-quantity').value = quantity;
+
+    // Calculate the new total
+    var total = quantity * pricePerItem;
+
+    // Format the total with comma separators
+    var formattedTotal = total.toLocaleString('vi-VN');
+
+    // Update the total in the summary-total class
+    document.querySelector('.summary-total p span').innerText = formattedTotal + '₫';
+});
+
+
