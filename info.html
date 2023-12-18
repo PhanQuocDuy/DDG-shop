@@ -374,47 +374,40 @@
             <div class="layout-account">
                 <div class="userbox customers_accountForm">
                     <form class="row g-3">
+                        <div class="col-12">
+                            <label for="inputName" class="form-label">Họ và tên người nhận</label>
+                            <input type="text" class="form-control" placeholder="Nguyễn Văn A" aria-label="First name">
+                        </div>
                         <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Email</label>
                             <input type="email" class="form-control" id="inputEmail4">
                         </div>
                         <div class="col-md-6">
-                            <label for="inputPassword4" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4">
+                            <label for="inputPhone" class="form-label">SDT</label>
+                            <input type="text" class="form-control" id="inputPhone">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Address</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <label for="inputAddress" class="form-label">Chọn phương thức thanh toán</label>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Chọn phương thức thanh toán</option>
+                                <option value="1">Thanh Toán Trực Tiếp Khi Nhận Hàng </option>
+                                <option value="2">Thanh Toán Trực Tuyến Qua Thẻ </option>
+                               
+                              </select>
                         </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
+                        <div class="col-12 mb-3">
+                            
+                                <label for="exampleFormControlTextarea1" class="form-label">Ghi Chú Cho Người Giao Hàng</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                             
                         </div>
-                        <div class="col-md-4">
-                            <label for="inputState" class="form-label">State</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
+                        
                         <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Check me out
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-primary">Thanh toán </button>
                         </div>
                     </form>
                 </div>
