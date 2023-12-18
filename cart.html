@@ -188,26 +188,13 @@
                                                                         <label for="login-customer[password]"
                                                                             class="form__floating-label">Mật
                                                                             khẩu</label>
-
-                                                                        <div class="sitebox-recaptcha">
-                                                                            This site is protected by reCAPTCHA and the
-                                                                            Google
-                                                                            <a href="https://policies.google.com/privacy"
-                                                                                target="_blank" rel="noreferrer">Privacy
-                                                                                Policy</a>
-                                                                            and <a
-                                                                                href="https://policies.google.com/terms"
-                                                                                target="_blank" rel="noreferrer">Terms
-                                                                                of Service</a> apply.
-                                                                        </div>
                                                                     </div>
                                                                     <button type="submit"
                                                                         class="form__submit button dark"
                                                                         id="form_submit-login">Đăng nhập</button>
 
                                                                     <input id="7a95ae40e8b9499f93411f172743d7ca"
-                                                                        name="g-recaptcha-response"
-                                                                        type="hidden">
+                                                                        name="g-recaptcha-response" type="hidden">
                                                                 </form>
 
                                                                 <div class="site_account_secondary-action">
@@ -235,13 +222,21 @@
                                                                     <input name="form_type" type="hidden"
                                                                         value="recover_customer_password">
                                                                     <input name="utf8" type="hidden" value="✓">
+                                                                    <div
+                                                                        class="form__input-wrapper form__input-wrapper--labelled">
+                                                                        <input type="email"
+                                                                            id="recover-customer[recover_email]"
+                                                                            class="form__field form__field--text"
+                                                                            name="email" required="required">
+                                                                        <label for="recover-customer[recover_email]"
+                                                                            class="form__floating-label">Email</label>
+                                                                    </div>
                                                                     <button type="submit"
                                                                         class="form__submit button dark"
                                                                         id="form_submit-recover">Khôi phục</button>
 
                                                                     <input id="4884ec76fb7442abae1dbc4e728fca2f"
-                                                                        name="g-recaptcha-response"
-                                                                        type="hidden">
+                                                                        name="g-recaptcha-response" type="hidden">
                                                                 </form>
                                                                 <div class="site_account_secondary-action">
                                                                     <p>Bạn đã nhớ mật khẩu?
@@ -254,10 +249,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="header-action-item header-action_cart">
                                         <div class="header-action_text">
@@ -283,98 +276,63 @@
                                                         </svg>
                                                     </span>
                                                     <span class="count-holder">
-                                                        <span class="count">1</span>
+                                                        <span class="count">0</span>
                                                     </span>
                                                 </span>
                                                 <span class="box-text">
                                                     <span class="txtbl">Giỏ hàng</span>
                                                 </span>
                                             </button>
-                                            <!-- <span class="box-triangle">
+                                            <span class="box-triangle">
                                                 <svg viewBox="0 0 20 9" role="presentation">
                                                     <path
                                                         d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
                                                         fill="#ffffff"></path>
                                                 </svg>
-                                            </span> -->
+                                            </span>
                                         </div>
-                                        <!-- <div class="header-action_dropdown">
+
+                                        <div class="header-action_dropdown">
                                             <div class="header-dropdown_content">
                                                 <div class="sitenav-content sitenav-cart">
                                                     <p class="boxtitle">Giỏ hàng</p>
                                                     <div class="cart-view clearfix">
                                                         <div class="cart-view-scroll">
                                                             <table class="clone-item-cart table-clone-cart">
-                                                                <tbody>
-                                                                    <tr class="mini-cart__item d-none">
-                                                                        <td class="mini-cart__left"><a class="mnc-link"
-                                                                                href="#" title=""><img src="/"
-                                                                                    alt=""></a>
-                                                                        </td>
-                                                                        <td class="mini-cart__right">
-                                                                            <p class="mini-cart__title">
-                                                                                <a class="mnc-title mnc-link" href="#"
-                                                                                    title=""></a>
-                                                                                <span class="mnc-variant"> </span>
-                                                                            </p>
-                                                                            <div class="mini-cart__quantity">
-                                                                                <button class="qty-btn mnc-minus">
-                                                                                    <svg width="18" height="18"
-                                                                                        viewBox="0 0 20 20">
-                                                                                        <rect height="1" width="18"
-                                                                                            y="9" x="1"></rect>
-                                                                                    </svg>
-                                                                                </button>
-                                                                                <input class="qty-value" type="text"
-                                                                                    readonly="" name="mnc-quantity"
-                                                                                    value="">
-                                                                                <button class="qty-btn mnc-plus">
-                                                                                    <svg width="18" height="18"
-                                                                                        viewBox="0 0 20 20">
-                                                                                        <rect x="9" y="1" width="1"
-                                                                                            height="17"></rect>
-                                                                                        <rect x="1" y="9" width="17"
-                                                                                            height="1"></rect>
-                                                                                    </svg>
-                                                                                </button>
-                                                                            </div>
-                                                                            <div class="mini-cart__price">
-                                                                                <span class="mnc-price">0₫</span>
-                                                                                <del class="mnc-ori-price"></del>
-                                                                            </div>
-                                                                            <div class="mini-cart__remove"></div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
+
                                                             </table>
                                                             <table class="table-cart-view">
-
-                                                                <tbody>
-                                                                    <tr class="mini-cart__empty">
-                                                                        <td>
-                                                                            <div class="svgico-mini-cart">
-                                                                                <svg width="81" height="70"
-                                                                                    viewBox="0 0 81 70">
-                                                                                    <g transform="translate(0 2)"
-                                                                                        stroke-width="4" fill="none"
-                                                                                        fill-rule="evenodd">
-                                                                                        <circle stroke-linecap="square"
-                                                                                            cx="34" cy="60" r="6">
-                                                                                        </circle>
-                                                                                        <circle stroke-linecap="square"
-                                                                                            cx="67" cy="60" r="6">
-                                                                                        </circle>
+                                                                <!-- <tr class="mini-cart__item" data-vid="1095390575"
+                                                                    data-pid="1043476696">
+                                                                    <td class="mini-cart__left"> <img src="./DDGSHOP/img/Linh kiện máy tính/Mản hình/3_6cf169375b234534820a3c75659eebd2_master.jpg" alt="">
+                                                                    </td>
+                                                                    <td class="mini-cart__right">
+                                                                        <p class="mini-cart__title">
+                                                                            <PC class="mnc-title mnc-link">PC
+                                                                                ZOTAC GAMING Type2 Super (VGA qua sử
+                                                                                dụng -Linh kiện còn lại all new)</a>
+                                                                            <span class="mnc-variant">PC ZOTAC GAMING
+                                                                                Type2 Super</span>
+                                                                        </p>
+                                                                        <div class="mini-cart__price">
+                                                                            <span class="mnc-price">9,590,000</span>
+                                                                            <del class="mnc-ori-price"></del>
+                                                                        </div>
+                                                                        <div class="mini-cart__remove"><a><svg                                                                                 
+                                                                                        x="0px" y="0px"
+                                                                                        viewBox="0 0 1000 1000"
+                                                                                        enable-background="new 0 0 1000 1000"
+                                                                                        xml:space="preserve">
+                                                                                    <g>
                                                                                         <path
-                                                                                            d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547">
+                                                                                            d="M500,442.7L79.3,22.6C63.4,6.7,37.7,6.7,21.9,22.5C6.1,38.3,6.1,64,22,79.9L442.6,500L22,920.1C6,936,6.1,961.6,21.9,977.5c15.8,15.8,41.6,15.8,57.4-0.1L500,557.3l420.7,420.1c16,15.9,41.6,15.9,57.4,0.1c15.8-15.8,15.8-41.5-0.1-57.4L557.4,500L978,79.9c16-15.9,15.9-41.5,0.1-57.4c-15.8-15.8-41.6-15.8-57.4,0.1L500,442.7L500,442.7z">
                                                                                         </path>
                                                                                     </g>
-                                                                                </svg>
-                                                                            </div>
-                                                                            Hiện chưa có sản phẩm
-                                                                        </td>
-                                                                    </tr>
-
-                                                                </tbody>
+                                                                                </svg></a></div>
+                                                                    </td>
+                                                                </tr> -->
+                                                                
+                                                               
                                                             </table>
                                                         </div>
                                                         <div class="cart-view-line"></div>
@@ -385,22 +343,24 @@
                                                                         <td class="mnc-total text-left">TỔNG TIỀN:</td>
                                                                         <td
                                                                             class="mnc-total text-right total-view-cart">
-                                                                            0₫
-                                                                        </td>
+                                                                            <span>0</span> <span>đ</span> </td>
                                                                     </tr>
                                                                     <tr class="mini-cart__button">
-                                                                        <td colspan="2"><a href="/cart.html"
+                                                                        <td colspan="2"><a href="./cart.html"
                                                                                 class="linktocart button ">Xem giỏ
-                                                                                hàng</a>
-                                                                        </td>
+                                                                                hàng</a></td>
+
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                         </div>
                                                     </div>
+
                                                 </div>
+
+
                                             </div>
-                                        </div> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -410,6 +370,7 @@
             </header>
         </div>
     </div>
+
     <!--Main-->
     <main class="wrapperMain_content">
         <div id="layout-cart">
