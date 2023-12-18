@@ -390,31 +390,61 @@
                             <label for="inputAddress" class="form-label">Address</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                         </div>
+                        
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Chọn phương thức thanh toán</label>
-                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                <option selected>Chọn phương thức thanh toán</option>
-                                <option value="1">Thanh Toán Trực Tiếp Khi Nhận Hàng </option>
-                                <option value="2">Thanh Toán Trực Tuyến Qua Thẻ </option>
-                               
-                              </select>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="cod">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Thanh toán khi giao hàng (COD)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="bankTransfer">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Chuyển khoản qua ngân hàng
+                                </label>
+                            </div>                           
                         </div>
                         <div class="col-12 mb-3">
-                            
-                                <label for="exampleFormControlTextarea1" class="form-label">Ghi Chú Cho Người Giao Hàng</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                             
+                            <div id="bankDetails" style="display: none;">
+                                <p>Qui khách chuyển khoản qua ngân hàng với nội dung: Số điện thoại + Số đơn hàng.</p>
+                                <p>Vietcombank chi nhánh Cần Thơ.</p>
+                                <p>Số tài khoản: 1027272873</p>
+                                <p>Chủ tài khoản: Võ Huân Đạt</p>
+                            </div>
                         </div>
-                        
+                        <div class="col-12 mb-3">
+
+                            <label for="exampleFormControlTextarea1" class="form-label">Ghi Chú Cho Người Giao
+                                Hàng</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                        </div>
+
+
+
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Thanh toán </button>
                         </div>
                     </form>
+                    <script>
+                        $(document).ready(function(){
+                            $("input[type='radio']").click(function(){
+                                var radioValue = $("input[name='flexRadioDefault']:checked").val();
+                                if(radioValue == "bankTransfer"){
+                                    $("#bankDetails").show();
+                                } else {
+                                    $("#bankDetails").hide();
+                                }
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>
     </main>
-      <!--Footer-->
+    <!--Footer-->
     <footer class="mainFooter">
         <div class="footer-center">
             <div class="footer-expand-collapsed ">
