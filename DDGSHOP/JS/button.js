@@ -94,3 +94,38 @@ function inputchane(){
         })
     }
 }
+function confirmDelete(element, url) {
+    // Hiển thị hộp thoại
+    var swalOverlay = document.querySelector('.swal-overlay');
+    swalOverlay.style.display = 'flex';
+
+    // Lắng nghe sự kiện click trên nút xác nhận
+    var confirmButton = document.querySelector('.swal-button--confirm');
+    confirmButton.addEventListener('click', function() {
+        // Gọi hàm xóa sản phẩm khỏi giỏ hàng
+        HRT.Cart.removeItemCart(element, url);
+    });
+}
+// Tìm nút "Hủy"
+var cancelButton = document.querySelector('.swal-button--cancel');
+
+// Thêm sự kiện click vào nút "Hủy"
+cancelButton.addEventListener('click', function() {
+    // Ẩn hộp thoại
+    var swalOverlay = document.querySelector('.swal-overlay');
+    swalOverlay.style.display = 'none';
+});
+// Tìm nút "Đồng ý"
+var confirmButton = document.querySelector('.swal-button--confirm');
+
+// Thêm sự kiện click vào nút "Đồng ý"
+confirmButton.addEventListener('click', function() {
+    // Xóa tất cả các phần tử trong class 'table-cart' cũng như chính nó
+    var tableCart = document.querySelector('.table-cart');
+    tableCart.parentNode.removeChild(tableCart);
+
+    // Ẩn hộp thoại
+    var swalOverlay = document.querySelector('.swal-overlay');
+    swalOverlay.style.display = 'none';
+});
+
