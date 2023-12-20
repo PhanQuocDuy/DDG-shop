@@ -27,7 +27,7 @@ function addcart(productIMG, productName, productPrice) {
 
     if (!productExistsInCart) {
         // Phần còn lại của hàm addcart...
-        var trcontent = '<tr style="font-family: Arial, sans-serif; font-size: 14px;"><td style="display: flex; align-items: center"><img src="'+productIMG+'" style="width: 25%; height: auto;" alt=" "><h7 class="nameItem">'+productName+'</h7></td><td style="padding: 10px;"><span style="font-weight: bold; color: black;">'+productPrice+'</span></td><td style="padding: 10px; background-color: #f8f9fa; text-align: center; border: 1px solid #ced4da; border-radius: 4px;"><input type="number" value="1" min="1" style="width: 30px; outline: none;" /></td><td style="cursor: pointer; padding: 10px; background-color: #f8f9fa; text-align: center; border: 1px solid #ced4da; border-radius: 4px;"><span class="deleteItem">Xóa</span></td></tr>'
+        var trcontent = '<tr style="font-family: Arial, sans-serif; font-size: 14px;"><td style="display: flex; align-items: center"><img src="'+productIMG+'" style="width: 25%; height: auto;" alt=" "><h7 class="nameItem">'+productName+'</h7></td><td style="padding: 10px;"><span style="font-weight: bold; color: black;">'+productPrice+'đ</span></td><td style="padding: 10px; background-color: #f8f9fa; text-align: center; border: 1px solid #ced4da; border-radius: 4px;"><input type="number" value="1" min="1" style="width: 30px; outline: none;" /></td><td style="cursor: pointer; padding: 10px; background-color: #f8f9fa; text-align: center; border: 1px solid #ced4da; border-radius: 4px;"><span class="deleteItem">Xóa</span></td></tr>'
         addtr.innerHTML = trcontent
         var cartTable = document.querySelector('table.table-cart-view')
         // console.log(cartTable)
