@@ -2820,7 +2820,7 @@ img.lazyload:not([src]) {
           left: 0;
           width: 100%;
           height: 100%;
-          z-index: 100; /* Đặt z-index cao để hộp thoại hiển thị trên tất cả các phần tử khác */
+          z-index: 100  ; /* Đặt z-index cao để hộp thoại hiển thị trên tất cả các phần tử khác */
           background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền bằng cách sử dụng màu nền bán trong suốt */
       }
       
