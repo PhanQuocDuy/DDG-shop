@@ -389,22 +389,19 @@
                             <label for="inputAddress" class="form-label">Address</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                         </div>
-                        
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Chọn phương thức thanh toán</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="cod">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Thanh toán khi giao hàng (COD)
-                                </label>
+                            <label for="" class="form-label">Phương Thức Thanh Toán</label>
+                            <div id="field-gender" class="clearfix large_form">
+                                <input id="radio1" type="radio" name="flexRadioDefault" value="cod">
+                                <label for="radio1">Thanh toán khi giao hàng (COD)</label>
+                                <input id="radio2" type="radio" name="flexRadioDefault" value="bankTransfer">
+                                <label for="radio2">Chuyển khoản qua ngân hàng</label>
                             </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="bankTransfer">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Chuyển khoản qua ngân hàng
-                                </label>
-                            </div>                           
+
                         </div>
+                        
+
+
                         <div class="col-12 mb-3">
                             <div id="bankDetails" style="display: none;">
                                 <p>Qui khách chuyển khoản qua ngân hàng với nội dung: Số điện thoại + Số đơn hàng.</p>
@@ -428,17 +425,23 @@
                         </div>
                     </form>
                     <script>
-                        $(document).ready(function(){
-                            $("input[type='radio']").click(function(){
+                        $(document).ready(function () {
+                            // Ẩn chi tiết ngân hàng khi trang tải
+                            $("#bankDetails").hide();
+
+                            $("input[type='radio']").click(function () {
                                 var radioValue = $("input[name='flexRadioDefault']:checked").val();
-                                if(radioValue == "bankTransfer"){
+                                if (radioValue == "bankTransfer") {
                                     $("#bankDetails").show();
                                 } else {
                                     $("#bankDetails").hide();
                                 }
                             });
                         });
+
                     </script>
+
+
                 </div>
             </div>
         </div>
